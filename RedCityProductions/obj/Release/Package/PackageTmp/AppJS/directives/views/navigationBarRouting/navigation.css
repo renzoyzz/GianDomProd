@@ -1,0 +1,32 @@
+﻿.index-navigation-bar-container {
+    font-size: 22px;
+    color: lightgray;
+    margin-top: 30px;
+    text-align: center;
+    float: right;
+}
+
+.index-navigation-choice {
+    color: white;
+    cursor: pointer;
+    padding: 5px 0px;
+    width: 100px;
+    display: inline-block;
+    transition: all ease .5s;
+}
+
+.index-navigation-choice:hover {
+    color: red;
+}
+
+.index-navigation-choice:hover .index-navigation-underline-bar {
+    width: 80px;
+}
+
+.index-navigation-underline-bar {
+    width: 0px;
+    background-color: red;
+    height: 1px;
+    margin: auto;
+    transition: all linear .2s;
+}

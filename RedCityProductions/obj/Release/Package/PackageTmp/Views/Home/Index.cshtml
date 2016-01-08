@@ -1,0 +1,41 @@
+﻿@{
+    Layout = null;
+}
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="RedCity">
+<head>
+    <title>GiamDom Productions</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/Videos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
+    <link href="~/AppJS/directives/views/tilePortfolio/tiles.css" rel="stylesheet" />
+    <link href="~/AppJS/directives/views/carousel/carousel.css" rel="stylesheet" />
+    <link href="~/AppJS/directives/views/navigationBarRouting/navigation.css" rel="stylesheet" />
+
+    <base href="/"/>
+</head>
+<body>
+    <nav class="index-nav-container">
+        <div class="index-nav-container-logo-container">
+            <div class="index-nav-logo">
+
+            </div>
+            <navigation-bar-routing></navigation-bar-routing>
+        </div>
+    </nav>
+    <ng-view class="view-animate"></ng-view>
+
+
+
+    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular-animate.min.js"></script>
+    <script src="~/Scripts/angular-route.min.js"></script>
+    <script src="~/AppJS/JS/app.js"></script>
+    <script src="~/AppJS/directives/portfolioTile.js"></script>
+    <script src="~/AppJS/directives/ngScopeElement.js"></script>
+    <script src="~/AppJS/directives/timedCarousel.js"></script>
+    <script src="~/AppJS/directives/navigationBarRouting.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+﻿.video-top-banner-wrapper {
+    position: relative;
+    background-image: url(https://media.giphy.com/media/145zKmWbS9Pj7a/giphy.gif);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.video-top-banner-header {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-size: 100px;
+    font-weight: 600;
+}
+
+.video-video-column-container {
+    background-attachment:fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    overflow:hidden;
+    color: white;
+}
+
+.video-video-column {
+    width: 50%;
+    margin: 100px 0px;
+    text-align: center;
+    display: inline-block;
+    float: left;
+}
+
+.video-video-line-break {
+    width: 90%;
+    margin-left: 5%;
+    float:left;
+    height: 2px;
+    background-color: white;
+}
+
+.video-video-column-left {
+    float:left;
+}
+
+.video-video-column-right {
+    float:right;
+}
+
+.video-video-frame {
+    width: 600px;
+    height: 347px;
+    margin-top: 40px;
+}
+
+.video-video-header {
+    text-align:left;
+    font-size: 40px;
+    margin:auto;
+    width: 600px;
+    transition:all ease 1s;
+}
+
+.video-video-column-container:hover .video-video-header{
+    text-indent: 15px;
+    color: red;
+}
+
+.video-video-description {
+    text-align:left;
+    margin:auto;
+    font-size: 25px;
+    width: 600px;
+}
+
+.video-video-description-left {
+    text-align: left;
+}
+
+.video-video-description-right {
+    text-align: right;
+}
+
+@media(max-width: 1400px) {
+    .video-video-column {
+        width: 100%;
+        text-align:center;
+        margin: 30px 0px;
+    }
+
+   
+    .video-video-frame {
+        margin: 0px;
+    }
+
+   
+}
+
+@media(max-width: 1000px) {
+ .video-video-column-container {
+        background-size: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-attachment: initial;
+    }
+
+}
+
