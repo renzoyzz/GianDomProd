@@ -5,7 +5,7 @@ var RedCityApp;
         var NavigationBarRouting = (function () {
             function NavigationBarRouting(scope, location) {
                 this.choiceButtons = [];
-                this.pages = ['/', '/videos', '/about', '/contact'];
+                this.pages = ['/', '/videos', '/about'];
                 this.scope = scope;
                 this.location = location;
                 this.pushButtonsToArray();
@@ -23,6 +23,7 @@ var RedCityApp;
             NavigationBarRouting.prototype.watchCurrentPage = function () {
                 this.currentPage = this.pages.indexOf(this.location.path());
                 this.updateAnimation();
+                $(window).scrollTop(0);
             };
             NavigationBarRouting.prototype.updateAnimation = function () {
                 for (var x = 0; x < this.choiceButtons.length; x++) {
@@ -59,10 +60,12 @@ var RedCityApp;
                     scope.$on('$locationChangeSuccess', function () {
                         navigationBarRouting.watchCurrentPage();
                     });
+                    scope.scrollToBottom = function () {
+                        $("html, body").animate({ scrollTop: $(document).height() - 400 }, 2000);
+                    };
                 }
             };
         }
         redCityApp.directive('navigationBarRouting', ['$location', '$routeParams', navigationBarRouting]);
     })(Directives = RedCityApp.Directives || (RedCityApp.Directives = {}));
 })(RedCityApp || (RedCityApp = {}));
-//# sourceMappingURL=navigationBarRouting.js.map

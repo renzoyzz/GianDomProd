@@ -27,7 +27,7 @@
                                 switchSlides(currentSlide, true);
                                 buttonCallBack();
                             }
-                        }, 4000);
+                        }, 10000);
                     }, 1000);
                 } else if (scope.direction === '1') {
                     direction = 'Y';
@@ -43,7 +43,7 @@
                                 switchSlides(currentSlide, true);
                                 buttonCallBack();
                             }
-                        }, 4000);
+                        }, 10000);
                     }, 1500);
                 } else if (scope.direction === '2') {
                     direction = 'X';
@@ -56,7 +56,7 @@
                                 switchSlides(currentSlide, false);
                                 buttonCallBack();
                             }
-                        }, 4000);
+                        }, 10000);
                     }, 2000);
 
                 }

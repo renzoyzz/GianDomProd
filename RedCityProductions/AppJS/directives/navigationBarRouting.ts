@@ -7,7 +7,7 @@
         private currentPage
         private choiceButtons: ng.IRootElementService[] = [];
 
-        private pages: string[] = [ '/', '/videos', '/about', '/contact']
+        private pages: string[] = [ '/', '/videos', '/about']
 
 
 
@@ -36,7 +36,7 @@
         public watchCurrentPage() {
             this.currentPage = this.pages.indexOf(this.location.path());
             this.updateAnimation();
-            
+            $(window).scrollTop(0);
         }
 
         private updateAnimation() {
@@ -81,6 +81,10 @@
                 scope.$on('$locationChangeSuccess', () => {
                     navigationBarRouting.watchCurrentPage();
                 });
+
+                scope.scrollToBottom = () => {
+                    $("html, body").animate({ scrollTop: $(document).height() - 400 }, 2000);
+                }
 
             }
         }

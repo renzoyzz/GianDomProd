@@ -1,6 +1,17 @@
-﻿.portfolio-tile-container {
-    width: 100%;
-    background-color: lightgray;
+﻿.portfolio-tile-companion-text {
+    width: 30%;
+    display: inline-block;
+    background-color: white;
+    float: left;
+    padding: 100px 200px;
+}
+
+.portfolio-tile-container {
+    width: 70%;
+    display: inline-block;
+    float: left;
+    padding: 100px 5%;
+    text-align: center;
 }
 
 .portfolio-tile {
@@ -8,15 +19,15 @@
     vertical-align: top;
     padding: 0px;
     display: inline-block;
-    width: 25%;
-    height: 100%;
+    width: 48%;
+    padding-bottom: 25%;
+    margin: 1%;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-position: center;
     position: relative;
-    height: 400px;
     cursor: pointer;
     overflow: hidden;
 }
@@ -38,7 +49,7 @@
 
 .portfolio-tile:hover .portfolio-tile-text {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(-25%);
 }
 
 .portfolio-tile-logo {
@@ -54,11 +65,15 @@
 }
 
 .portfolio-tile-text {
+    position: absolute;
     color: white;
     font-size: 20px;
     width: 70%;
-    margin: auto;
-    margin-top: 30%;
+    height: 100%;
+    margin: 0px auto;
+    top: 50%;
+    left: 50%;
+    margin-left: -35%;
     transition: all linear .2s;
     transition-delay: .2s;
     text-align: center;
@@ -103,7 +118,7 @@
     left: 0px;
     top: 0px;
     transition: all ease 1s;
-    z-index: 5;
+    z-index: 50;
 }
 
 
@@ -117,17 +132,27 @@
     }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1500px) {
+
+    .portfolio-tile-container {
+    width: 100%;
+    }
+
     .portfolio-tile {
         width: 100%;
+        padding-bottom: 50%;
+        margin: 30px auto;
+        display: block;
+        float:none;
         background-size: 100%;
         -webkit-background-size: 100%;
         -moz-background-size: 100%;
         -o-background-size: 100%;
+
     }
 
     .portfolio-tile-text {
-        margin-top: 10%;
+        margin-top: 3%;
         font-size: 40px;
     }
 }

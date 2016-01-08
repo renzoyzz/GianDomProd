@@ -1,6 +1,6 @@
 ﻿.overlay-mask {
     overflow: hidden;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.2);
 }
 
 
@@ -21,8 +21,19 @@ body {
     height: 100px;
     position: fixed;
     text-align: center;
-    background-color: rgba(0,0,0,.9);
-    border-bottom: 2px solid red;
+    background-color: rgba(67, 73, 83,.9);
+    border-bottom: 1px solid lightgreen;
+}
+
+.index-nav-container-jumbo {
+    z-index: 20;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(67, 73, 83,.9);
+    border-bottom: 2px solid lightgreen;
+    bottom: 0px;
 }
 
 
@@ -40,7 +51,45 @@ body {
     background-size: cover;
     float: left;
 }
+.home-top-banner-jumbo {
+    margin-top: 100px;
+    height: calc(100% - 100px);
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+   
+}
 
+.home-top-banner-jumbo-text {
+    position: absolute;
+    height: 70px;
+    color: white;
+    top: 50%;
+    width: 100%;
+    margin-top: -150px;
+}
+
+.home-top-banner-jumbo-button {
+    width: 400px;
+    border-radius: 10px;
+
+    padding: 10px 0px;
+    margin:auto;
+    font-size: 50px;
+    background-color: #004489;
+    color: white;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+
+
+.home-top-banner-jumbo-button:hover {
+    background-color: rgba(0, 68, 137, .7);
+}
+
+.home-top-banner-jumbo-text h1 {
+    font-size: 70px;
+}
 
 
 .home-top-banner-wrapper {
@@ -53,6 +102,8 @@ body {
     text-align: center;
     overflow: hidden;
 }
+
+
 
 .home-top-banner-full-container {
     z-index: 2;
@@ -225,7 +276,7 @@ body {
 }
 
 .home-middle-break-section {
-    background-color: black;
+    background-color: white;
     overflow: hidden;
     color: red;
 }
@@ -238,18 +289,10 @@ body {
 }
 
     .home-middle-break-section-text i {
-        color: white;
+        color: black;
     }
 
-.home-middle-break-section-portfolio-header {
-    font-size: 50px;
-    text-align: center;
-    margin: 20px auto;
-    color: white;
-}
-
 .home-end-container {
-    background-image: url(http://www.wallpapersdb.org/wallpapers/nature/blue_view_1920x1080.jpg);
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;

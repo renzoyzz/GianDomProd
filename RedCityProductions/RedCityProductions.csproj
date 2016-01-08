@@ -222,6 +222,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AppJS\directives\views\bannerButton\bannerButton.html" />
     <Content Include="AppJS\directives\views\carousel\carousel.css" />
     <Content Include="AppJS\directives\views\carousel\carousel.html" />
     <Content Include="AppJS\directives\views\navigationBarRouting\navigation.css" />
@@ -239,6 +240,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\Domin.jpg" />
+    <Content Include="Content\Images\lakeView.jpg" />
     <Content Include="Content\Images\Space1.jpg" />
     <Content Include="Content\Images\space2.jpg" />
     <Content Include="Content\Images\space3.jpg" />
@@ -1106,6 +1108,7 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="AppJS\directives\BannerButton.ts" />
     <TypeScriptCompile Include="AppJS\directives\navigationBarRouting.ts" />
     <TypeScriptCompile Include="AppJS\directives\ngScopeElement.ts" />
     <TypeScriptCompile Include="AppJS\directives\portfolioTile.ts" />

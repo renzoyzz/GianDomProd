@@ -26,7 +26,7 @@ redCityApp.directive('timedCarousel', [
                                 switchSlides(currentSlide, true);
                                 buttonCallBack();
                             }
-                        }, 4000);
+                        }, 10000);
                     }, 1000);
                 }
                 else if (scope.direction === '1') {
@@ -43,7 +43,7 @@ redCityApp.directive('timedCarousel', [
                                 switchSlides(currentSlide, true);
                                 buttonCallBack();
                             }
-                        }, 4000);
+                        }, 10000);
                     }, 1500);
                 }
                 else if (scope.direction === '2') {
@@ -57,7 +57,7 @@ redCityApp.directive('timedCarousel', [
                                 switchSlides(currentSlide, false);
                                 buttonCallBack();
                             }
-                        }, 4000);
+                        }, 10000);
                     }, 2000);
                 }
                 var rightMouseButton = element.eq(2).on('mousedown', function (event) {
@@ -123,4 +123,3 @@ redCityApp.directive('timedCarousel', [
             }
         };
     }]);
-//# sourceMappingURL=timedCarousel.js.map
