@@ -4,13 +4,49 @@ var RedCityApp;
     (function (Directives) {
         var NavigationBarRouting = (function () {
             function NavigationBarRouting(scope, location) {
+                var _this = this;
                 this.choiceButtons = [];
                 this.pages = ['/', '/videos', '/about'];
+                this.document = $(document);
+                this.window = $(window);
                 this.scope = scope;
                 this.location = location;
                 this.pushButtonsToArray();
                 this.watchCurrentPage();
+                if (this.currentPage == 0) {
+                    this.fixNavToTop();
+                    this.window.scroll(function () {
+                        if (_this.currentPage == 0) {
+                            _this.fixNavToTop();
+                        }
+                        else {
+                            $('.index-nav-container').css({
+                                display: 'block'
+                            });
+                        }
+                    });
+                }
+                else {
+                    $('.index-nav-container').css({
+                        display: 'block'
+                    });
+                }
             }
+            NavigationBarRouting.prototype.fixNavToTop = function () {
+                var windowScroll = this.window.scrollTop();
+                var navBarScroll = $('.index-nav-container-jumbo').offset().top;
+                console.log(windowScroll + ' ' + navBarScroll);
+                if (windowScroll < navBarScroll) {
+                    $('.index-nav-container').css({
+                        display: 'none'
+                    });
+                }
+                else {
+                    $('.index-nav-container').css({
+                        display: 'block'
+                    });
+                }
+            };
             NavigationBarRouting.prototype.pushButtonsToArray = function () {
                 this.choiceButtons.push(this.scope.zero);
                 this.choiceButtons.push(this.scope.one);
@@ -23,24 +59,18 @@ var RedCityApp;
             NavigationBarRouting.prototype.watchCurrentPage = function () {
                 this.currentPage = this.pages.indexOf(this.location.path());
                 this.updateAnimation();
-                $(window).scrollTop(0);
+                this.window.scrollTop(0);
             };
             NavigationBarRouting.prototype.updateAnimation = function () {
                 for (var x = 0; x < this.choiceButtons.length; x++) {
                     if (x == this.currentPage) {
                         this.choiceButtons[x].css({
-                            color: 'red'
-                        });
-                        this.choiceButtons[x].children('div').css({
-                            width: '80px'
+                            color: 'rgba(255,255,255,1)'
                         });
                     }
                     else {
                         this.choiceButtons[x].css({
-                            color: 'white'
-                        });
-                        this.choiceButtons[x].children('div').css({
-                            width: '0px'
+                            color: 'rgba(255,255,255,.5)'
                         });
                     }
                 }

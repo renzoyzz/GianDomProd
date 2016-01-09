@@ -16,11 +16,7 @@
 }
 
 .index-navigation-choice:hover {
-    color: red;
-}
-
-.index-navigation-choice:hover .index-navigation-underline-bar {
-    width: 80px;
+    color: white;
 }
 
 .index-navigation-underline-bar {

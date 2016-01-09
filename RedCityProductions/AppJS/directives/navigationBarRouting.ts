@@ -9,7 +9,8 @@
 
         private pages: string[] = [ '/', '/videos', '/about']
 
-
+        private document = $(document);
+        private window = $(window);
 
 
 
@@ -18,9 +19,43 @@
             this.location = location;
             this.pushButtonsToArray();
             this.watchCurrentPage();
+            if (this.currentPage == 0) {
+                this.fixNavToTop();
+                this.window.scroll(() => {
+                    if (this.currentPage == 0) {
+                        this.fixNavToTop();
+                    } else {
+                        $('.index-nav-container').css({
+                            display: 'block'
+                        });
+                    }
+                });
+            } else {
+                $('.index-nav-container').css({
+                    display: 'block'
+                });
+            }
 
+            
 
         }
+
+        private fixNavToTop() {
+            let windowScroll = this.window.scrollTop();
+            let navBarScroll = $('.index-nav-container-jumbo').offset().top;
+            console.log(windowScroll + ' ' + navBarScroll);
+            if (windowScroll < navBarScroll) {
+                $('.index-nav-container').css({
+                    display: 'none'
+                });
+            } else {
+                $('.index-nav-container').css({
+                    display: 'block'
+                });
+            }
+            
+        }
+
 
         private pushButtonsToArray() {
             this.choiceButtons.push(this.scope.zero);
@@ -36,7 +71,7 @@
         public watchCurrentPage() {
             this.currentPage = this.pages.indexOf(this.location.path());
             this.updateAnimation();
-            $(window).scrollTop(0);
+            this.window.scrollTop(0);
         }
 
         private updateAnimation() {
@@ -44,18 +79,14 @@
             for (let x = 0; x < this.choiceButtons.length; x++) {
                 if (x == this.currentPage) {
                     this.choiceButtons[x].css({
-                        color: 'red'
+                        color: 'rgba(255,255,255,1)'
                     });
-                    this.choiceButtons[x].children('div').css({
-                        width: '80px'
-                    });
+                 
                 } else {
                     this.choiceButtons[x].css({
-                        color: 'white'
+                        color: 'rgba(255,255,255,.5)'
                     });
-                    this.choiceButtons[x].children('div').css({
-                        width: '0px'
-                    });
+                    
                 }
             }
         }
