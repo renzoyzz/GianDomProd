@@ -18,11 +18,3 @@
 .index-navigation-choice:hover {
     color: white;
 }
-
-.index-navigation-underline-bar {
-    width: 0px;
-    background-color: red;
-    height: 1px;
-    margin: auto;
-    transition: all linear .2s;
-}
