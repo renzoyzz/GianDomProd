@@ -275,6 +275,8 @@ body {
 }
 
 .home-middle-break-section {
+    width: 90%;
+    margin:auto;
     background-color: white;
     overflow: hidden;
 }
