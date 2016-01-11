@@ -123,3 +123,4 @@ redCityApp.directive('timedCarousel', [
             }
         };
     }]);
+//# sourceMappingURL=timedCarousel.js.map

@@ -16,31 +16,33 @@ body {
 
 
 .index-nav-container {
-    z-index: 20;
+    z-index: 21;
     width: 100%;
     height: 100px;
     position: fixed;
     text-align: center;
-    background-color: rgba(67, 73, 83,.9);
+    background-color: rgba(67, 73, 83, 1);
     border-bottom: 1px solid lightgreen;
 }
 
 .index-nav-container-jumbo {
     z-index: 20;
+    position: absolute;
     width: 100%;
     height: 100px;
-    position: absolute;
     text-align: center;
-    background-color: rgba(67, 73, 83,.9);
+    background-color: rgba(67, 73, 83,1);
     border-bottom: 2px solid lightgreen;
     bottom: 0px;
 }
 
 
 .index-nav-container-logo-container {
-    display: inline-block;
-    width: 70%;
-    margin-top: 0px;
+    display: block;
+    height: 100px;
+    width: 75%;
+    margin: auto;
+    text-align: center;
 }
 
 .index-nav-logo {
@@ -52,11 +54,10 @@ body {
     float: left;
 }
 .home-top-banner-jumbo {
-    margin-top: 100px;
-    height: calc(100% - 100px);
+    height: 100%;
     position: relative;
     overflow: hidden;
-    min-height: 500px;
+    min-height: 600px;
    
 }
 
@@ -95,7 +96,6 @@ body {
 .home-top-banner-wrapper {
     position: relative;
     color: rgba(255,255,255,1);
-    background-image: url(/Content/Images/audi_cover1.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -278,7 +278,6 @@ body {
 .home-middle-break-section {
     background-color: white;
     overflow: hidden;
-    color: red;
 }
 
 .home-middle-break-section-text {

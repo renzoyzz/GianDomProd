@@ -1,22 +1,33 @@
-﻿.portfolio-tile-companion-text {
+﻿.portfolio-tile-companion-text-container {
     width: 30%;
     display: inline-block;
     background-color: white;
     float: left;
-    padding: 100px 200px;
+    text-align: right;
 }
 
+.portfolio-tile-companion-text {
+    width: 80%;
+    display: inline-block;
+    text-align:left;
+    font-size: 30px;
+    margin: 50px auto;
+}
+
+
+
 .portfolio-tile-container {
+    vertical-align: top;
     width: 70%;
     display: inline-block;
     float: left;
-    padding: 100px 5%;
+    padding: 0px 5%;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .portfolio-tile {
     float: left;
-    vertical-align: top;
     padding: 0px;
     display: inline-block;
     width: 48%;
@@ -30,6 +41,7 @@
     position: relative;
     cursor: pointer;
     overflow: hidden;
+    text-align: center;
 }
 
 .portfolio-tile-overlay {
@@ -134,6 +146,13 @@
 
 @media(max-width: 1500px) {
 
+    .portfolio-tile-companion-text-container {
+    width: 100%;
+    display:block;
+    float: none;
+    text-align: center;
+}
+
     .portfolio-tile-container {
     width: 100%;
     }
@@ -152,8 +171,7 @@
     }
 
     .portfolio-tile-text {
-        margin-top: 3%;
-        font-size: 40px;
+        font-size: 25px;
     }
 }
 
