@@ -311,11 +311,17 @@ body {
 }
 
 .home-about-section-text-column {
-    width: 500px;
-    margin-right: 5%;
-    float: right;
+    width:  30%;
+    padding: 0px 40px;
+    float: left;
     display: inline-block;
 
+}
+
+.home-about-section-header {
+    padding: 0px;
+    font-size: 40px;
+    text-align:right;
 }
 
 .home-client-section-container {
