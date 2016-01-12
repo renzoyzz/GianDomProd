@@ -239,8 +239,14 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\About_bg_image1.jpg" />
     <Content Include="Content\Images\Domin.jpg" />
+    <Content Include="Content\Images\ff_home_overlay1.png" />
+    <Content Include="Content\Images\ff_home_overlay2.png" />
+    <Content Include="Content\Images\ff_home_overlay3.png" />
+    <Content Include="Content\Images\ff_home_overlay4.png" />
     <Content Include="Content\Images\lakeView.jpg" />
+    <Content Include="Content\Images\overlay_mask_home.png" />
     <Content Include="Content\Images\Space1.jpg" />
     <Content Include="Content\Images\space2.jpg" />
     <Content Include="Content\Images\space3.jpg" />
@@ -255,7 +261,7 @@
     <Content Include="Content\Images\giphy.gif" />
     <Content Include="Content\Images\Logo.png" />
     <Content Include="Content\Images\makeUp.png" />
-    <Content Include="Content\Images\Radiohead - Karma Police.mp4" />
+    <Content Include="Content\Images\web_bg_test2.mp4" />
     <Content Include="Content\Videos.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -326,6 +332,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\Fonts\circula-medium.otf" />
+    <Content Include="Content\Fonts\ufonts.com_gotham-book.ttf" />
     <None Include="Properties\PublishProfiles\GianDomProductions.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\GoogleMaps\googleMaps.js" />
