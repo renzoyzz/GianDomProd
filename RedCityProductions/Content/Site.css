@@ -1,11 +1,17 @@
-﻿.overlay-mask {
+﻿
+@font-face {
+    font-family: 'Gotham'; /*a name to be used later*/
+    src: url(/Content/Fonts/ufonts.com_gotham-book.ttf); /*URL to font*/
+}
+
+.overlay-mask {
     overflow: hidden;
     background-color: rgba(0,0,0,.2);
 }
 
 
 body {
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: Gotham;
     overflow-x: hidden;
 }
 
@@ -22,7 +28,8 @@ body {
     position: fixed;
     text-align: center;
     background-color: rgba(67, 73, 83, 1);
-    border-bottom: 1px solid lightgreen;
+    border-bottom: 2px solid brown;
+
 }
 
 .index-nav-container-jumbo {
@@ -31,8 +38,7 @@ body {
     width: 100%;
     height: 100px;
     text-align: center;
-    background-color: rgba(67, 73, 83,1);
-    border-bottom: 2px solid lightgreen;
+    border-top: 5px solid white;
     bottom: 0px;
 }
 
@@ -55,46 +61,59 @@ body {
 }
 .home-top-banner-jumbo {
     height: 100%;
+    background-image: url(/Content/Images/ff_home_overlay1.png);
+    background-size: cover;
     position: relative;
     overflow: hidden;
     min-height: 700px;
-   
+}
+
+
+
+.home-top-banner-jumbo-video-background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
+    
+}
+
+
+.home-top-banner-jumbo-text-container {
+    text-align:right;
+    height: 100%;
+}
+
+.home-top-banner-jumbo-logo {
+    display: inline-block;
+    margin: 50px;
+    width: 400px;
+    height: 150px;
+    background-color: black;
 }
 
 .home-top-banner-jumbo-text {
-    position: absolute;
-    height: 150px;
-    color: white;
-    top: 50%;
-    width: 100%;
-    margin-top: -150px;
+    white-space: pre;
+    text-align: center;
+    margin: 130px 0px;
+    width: 90%;
+    font-size: 30px;
+    text-align: center;
 }
-
-.home-top-banner-jumbo-button {
-    width: 400px;
-    border-radius: 10px;
-    padding: 10px 0px;
-    margin:auto;
-    font-size: 50px;
-    background-color: #004489;
-    color: white;
-    transition: all ease .5s;
-    cursor: pointer;
-}
-
-
-.home-top-banner-jumbo-button:hover {
-    background-color: rgba(0, 68, 137, .7);
-}
-
-.home-top-banner-jumbo-text h1 {
-    font-size: 70px;
-}
-
 
 .home-top-banner-wrapper {
     position: relative;
-    color: rgba(255,255,255,1);
+    color: white;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -275,22 +294,68 @@ body {
 }
 
 .home-middle-break-section {
-    width: 90%;
-    margin:auto;
+    padding: 70px 0px;
+    margin: auto ;
     background-color: white;
+    z-index: 50;
     overflow: hidden;
 }
 
-.home-middle-break-section-text {
-    text-align: center;
-    margin: 60px auto;
-    width: 90%;
-    font-size: 32px;
+.home-about-section {
+    overflow: hidden;
+   font-size: 20px;
+   padding-top: 500px;
+   padding-bottom: 100px;
+   background-image: url(/Content/Images/About_bg_image1.jpg);
+   background-size: cover;
 }
 
-    .home-middle-break-section-text i {
-        color: black;
-    }
+.home-about-section-text-column {
+    width: 500px;
+    margin-right: 5%;
+    float: right;
+    display: inline-block;
+
+}
+
+.home-client-section-container {
+    background-color: white;
+    overflow: hidden;
+    padding: 70px 0px;
+}
+
+
+
+.home-client-section-title {
+    display: inline-block;
+    float: left;
+    font-size: 40px;
+    width: 30%;
+    text-align: right;
+}
+
+.home-client-section-logo-container {
+    display: inline-block;
+    float: left;
+    width: 70%;
+}
+
+.home-client-logos {
+    display: block;
+    margin: auto;
+    width: 80%;
+    text-align: right;
+}
+
+.home-client-logo {
+    background-color: black;
+    width: 30%;
+    float:left;
+    display: inline-block;
+    padding: 6% 0px;
+    margin: 1%;
+}
+
 
 .home-end-container {
     background-size: cover;
