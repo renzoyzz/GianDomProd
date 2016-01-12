@@ -6,14 +6,12 @@
     text-align: right;
 }
 
-.portfolio-tile-companion-text {
-    width: 80%;
-    display: inline-block;
-    text-align:left;
-    font-size: 30px;
-    margin: 50px auto;
-}
 
+.portfolio-tile-companion-text-header {
+    text-align: right;
+    margin: 10px auto;
+    font-size: 40px;
+}
 
 
 .portfolio-tile-container {
@@ -22,17 +20,20 @@
     display: inline-block;
     float: left;
     padding: 0px 5%;
+    text-align: left;
+}
+
+.portfolio-tiles {
+    width: 90%;
     text-align: center;
-    margin-bottom: 50px;
 }
 
 .portfolio-tile {
-    float: left;
     padding: 0px;
     display: inline-block;
-    width: 48%;
-    padding-bottom: 25%;
-    margin: 1%;
+    width: 96%;
+    margin: 10px 0px;
+    padding-bottom: 50%;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -61,7 +62,6 @@
 
 .portfolio-tile:hover .portfolio-tile-text {
     opacity: 1;
-    transform: translateY(-25%);
 }
 
 .portfolio-tile-logo {
@@ -77,20 +77,19 @@
 }
 
 .portfolio-tile-text {
+    height: 100px;
+    width: 260px;
     position: absolute;
-    color: white;
-    font-size: 20px;
-    width: 70%;
-    height: 100%;
-    margin: 0px auto;
     top: 50%;
+    margin-top: -50px;
     left: 50%;
-    margin-left: -35%;
+    margin-left:-130px;
+    overflow: hidden;
+    bottom: 10px;
     transition: all linear .2s;
     transition-delay: .2s;
     text-align: center;
     opacity: 0;
-    transform: translateY(100px);
 }
 
 .portfolio-tile-button {
@@ -144,36 +143,7 @@
     }
 }
 
-@media(max-width: 1500px) {
 
-    .portfolio-tile-companion-text-container {
-    width: 100%;
-    display:block;
-    float: none;
-    text-align: center;
-}
-
-    .portfolio-tile-container {
-    width: 100%;
-    }
-
-    .portfolio-tile {
-        width: 100%;
-        padding-bottom: 50%;
-        margin: 30px auto;
-        display: block;
-        float:none;
-        background-size: 100%;
-        -webkit-background-size: 100%;
-        -moz-background-size: 100%;
-        -o-background-size: 100%;
-
-    }
-
-    .portfolio-tile-text {
-        font-size: 25px;
-    }
-}
 
 @media(max-width: 950px) {
 

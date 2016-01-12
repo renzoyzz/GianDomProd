@@ -29,7 +29,6 @@ body {
     text-align: center;
     background-color: rgba(67, 73, 83, 1);
     border-bottom: 2px solid brown;
-
 }
 
 .index-nav-container-jumbo {
@@ -59,6 +58,7 @@ body {
     background-size: cover;
     float: left;
 }
+
 .home-top-banner-jumbo {
     height: 100%;
     background-image: url(/Content/Images/ff_home_overlay1.png);
@@ -84,13 +84,12 @@ body {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     background: url(polina.jpg) no-repeat;
-    background-size: cover; 
-    
+    background-size: cover;
 }
 
 
 .home-top-banner-jumbo-text-container {
-    text-align:right;
+    text-align: right;
     height: 100%;
 }
 
@@ -127,308 +126,196 @@ body {
     z-index: 2;
 }
 
-.home-top-banner-carousel {
-    margin-top: 140px;
-    font-size: 50px;
+
+.about-section {
+    overflow: hidden;
+    background-image: url(/Content/Images/About_bg_image1.jpg);
+    background-size: cover;
+    color: wheat;
+    position: relative;
+    height: 1000px;
+}
+
+    .about-section .body-container {
+        position: absolute;
+        bottom: 0px;
+    }
+
+.latest-work-section {
+    background-color: rgba(0,0,0,.8);
+    overflow: hidden;
     color: white;
 }
 
-.home-top-banner-social-bar-container {
-    display: inline-block;
-    width: 700px;
+.client-section {
+    overflow: hidden;
+    background-color: rgba(200,200,200,1);
 }
 
-.home-social-bar-line {
-    display: inline-block;
-    height: 2px;
-    background-color: red;
-    width: 200px;
-    margin-bottom: 10px;
-}
-
-.home-social-bar-button {
-    border: 2px solid white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    display: inline-block;
-    text-align: center;
-    cursor: pointer;
-    transition: all ease .5s;
-}
-
-    .home-social-bar-button:hover {
-        color: rgba(0,0,0,1);
-        background-color: white;
+    .client-section .client-logo {
+        width: 100%;
+        height: 150px;
+        margin: 15px 0px;
+        text-align: center;
     }
 
-.home-social-bar-button-logo {
-    display: inline-block;
-    text-align: center;
-    font-size: 30px;
-    width: 32px;
-    height: 32px;
-    margin-top: 8px;
-}
+        .client-section .client-logo img {
+            height: 100%;
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+            transition: all ease .5s;
+            opacity: .5;
+        }
 
-.home-top-banner-down-button-container {
-    margin-top: 30px;
-    font-size: 100px;
-}
+            .client-section .client-logo img:hover {
+                -webkit-filter: grayscale(0);
+                filter: grayscale(0);
+                opacity: 1;
+            }
 
-.home-top-banner-down-button {
-    cursor: pointer;
-    display: inline-block;
-    border-radius: 50px;
-    width: 80px;
-    height: 80px;
-    transition: all ease .5s;
-}
 
-    .home-top-banner-down-button:hover {
-        color: red;
-    }
-
-.home-top-banner-column-container {
-    display: inline-block;
-    width: 90%;
-    margin-top: 40px;
-}
-
-.home-top-banner-column {
-    display: inline-block;
-    width: 30%;
-    margin: 10px;
-    vertical-align: top;
-}
-
-.home-top-banner-column-icon {
-    font-size: 30px;
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    background-color: red;
-    color: black;
-    border-radius: 50px;
-    text-align: center;
-}
-
-    .home-top-banner-column-icon i {
-        margin-top: 13px;
-    }
-
-.home-top-banner-column-header {
-    font-size: 20px;
-    color: red;
-    margin: 15px 0px;
-}
-
-.home-top-banner-column-text {
-    display: block;
-    max-width: 400px;
-    margin: auto;
-}
-
-.home-top-banner-column-link {
-    margin: auto;
-    display: block;
-    color: red;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    cursor: pointer;
-}
-
-    .home-top-banner-column-link:hover {
-        color: red;
-    }
-
-.home-middle-banner-wrapper {
-    color: rgba(255,255,255,1);
-    background-image: url(http://eclair16.com/files/2009/06/acl_decked.jpg);
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-attachment: fixed;
-    text-align: center;
+.body-container {
+    margin: 50px 0px;
+    width: 100%;
     overflow: hidden;
 }
 
-.home-middle-banner-button {
-    display: block;
-    background-color: black;
-    color: white;
-    width: 300px;
-    height: 50px;
-    margin: 30px auto;
-    font-size: 25px;
-    border-radius: 5px;
-    border: 1px solid red;
-}
-
-    .home-middle-banner-button:hover {
-        text-decoration: none;
-        color: white;
-    }
-
-.home-middle-banner-button-text {
-    margin-top: 5px;
-}
-
-.home-middle-banner-header {
-    margin-top: 20px;
-    font-size: 50px;
-}
-
-.home-middle-banner-logo {
+.body {
+    max-width: 1500px;
+    width: 100%;
     display: block;
     margin: auto;
-    background-image: url('https://qzevents.files.wordpress.com/2015/05/intel20logo20white.png');
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    width: 200px;
-    height: 150px;
-}
-
-.home-middle-break-section {
-    padding: 70px 0px;
-    margin: auto ;
-    background-color: white;
-    z-index: 50;
     overflow: hidden;
 }
 
-.home-about-section {
-    overflow: hidden;
-   font-size: 20px;
-   padding-top: 500px;
-   padding-bottom: 100px;
-   background-image: url(/Content/Images/About_bg_image1.jpg);
-   background-size: cover;
-}
-
-.home-about-section-text-column {
-    width:  30%;
-    padding: 0px 40px;
-    float: left;
-    display: inline-block;
-
-}
-
-.home-about-section-header {
-    padding: 0px;
+.title-section {
+    padding: 0px 50px;
     font-size: 40px;
-    text-align:right;
-}
-
-.home-client-section-container {
-    background-color: white;
-    overflow: hidden;
-    padding: 70px 0px;
-}
-
-
-
-.home-client-section-title {
     display: inline-block;
+    text-align: left;
     float: left;
-    font-size: 40px;
     width: 30%;
-    text-align: right;
 }
 
-.home-client-section-logo-container {
+
+.content-section {
     display: inline-block;
     float: left;
     width: 70%;
+    border-left: 1px solid black;
 }
 
-.home-client-logos {
-    display: block;
-    margin: auto;
-    width: 80%;
-    text-align: right;
-}
 
-.home-client-logo {
-    background-color: black;
-    width: 30%;
-    float:left;
+
+
+.content-section-padding {
     display: inline-block;
-    padding: 6% 0px;
-    margin: 1%;
+    float: left;
+    width: 70%;
+    padding: 0px 30px;
+    border-left: 1px solid black;
 }
 
 
-.home-end-container {
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    overflow: hidden;
+
+.column2 {
+    text-align: left;
+    padding: 0px 30px;
+    font-size: 18px;
+    width: 50%;
+    display: inline-block;
+    float: left;
 }
 
-.home-end-team-container {
-    display: block;
-    margin: auto;
-    width: 80%;
-    max-width: 1200px;
+.column2-no-padding {
+    text-align: left;
+    padding: 0px;
+    width: 50%;
+    display: inline-block;
+    float: left;
 }
 
-    .home-end-team-container .first {
+.column3 {
+    padding: 0px 30px;
+    font-size: 18px;
+    width: 33%;
+    display: inline-block;
+    float: left;
+}
+
+.column3-no-padding {
+    padding: 0px;
+    width: 33%;
+    display: inline-block;
+    float: left;
+}
+
+@media(max-width: 900px) {
+
+    .body {
+        text-align: center;
+        width: 90%;
+    }
+
+    .title-section {
+        display: block;
+        font-size: 40px;
+        border-bottom: 1px solid;
+        text-align: center;
+        margin: 30px 0px;
+        width: 100%;
+    }
+
+
+    .content-section {
+        display: block;
+        float: none;
+        width: 100%;
+        border-left: 0px solid black;
+    }
+
+
+
+
+    .content-section-padding {
+        display: block;
+        float: none;
+        width: 100%;
+        padding: 0px;
+        border-left: 0px solid black;
+    }
+
+
+
+    .column2 {
+        padding: 0px;
+        font-size: 18px;
+        width: 100%;
+        display: inline-block;
+        float: none;
+    }
+
+    .column2-no-padding {
+        padding: 0px;
+        width: 100%;
+        display: inline-block;
+        float: none;
+    }
+
+    .column3 {
+        padding: 0px;
+        font-size: 18px;
+        width: 33%;
+        display: inline-block;
         float: left;
     }
 
-    .home-end-team-container .second {
-        float: right;
+    .column3-no-padding {
+        padding: 0px;
+        width: 33%;
+        display: inline-block;
+        float: left;
     }
-
-.home-end-team-header {
-    padding: 25px 0px;
-    font-size: 50px;
-    font-weight: 600;
-    text-align: center;
-    background: red;
-    color: white;
-}
-
-.home-end-teammate-container {
-    width: 450px;
-    margin: 50px auto;
-    overflow: hidden;
-}
-
-.home-end-teammate-image {
-    margin: 40px auto;
-    width: 300px;
-    height: 300px;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    border-radius: 150px;
-    border: 2px solid orange;
-}
-
-.home-end-teammate-name {
-    color: white;
-    text-align: center;
-    font-weight: 800;
-    font-size: 40px;
-    margin: 30px auto;
-}
-
-.home-end-teammate-text {
-    font-size: 20px;
-    width: 400px;
-    margin: 40px auto;
-    text-align: center;
-    color: white;
 }
 
 .home-contact-container {
@@ -491,26 +378,26 @@ body {
 
     .home-end-container {
         background-size: 100%;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-attachment: initial;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-attachment: initial;
     }
 
     .home-top-banner-wrapper {
         background-size: 100%;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-attachment: initial;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-attachment: initial;
     }
 
     .home-middle-banner-wrapper {
         background-size: 100%;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-attachment: initial;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-attachment: initial;
     }
 
     .home-top-banner-column-text {
@@ -521,5 +408,3 @@ body {
         text-align: center;
     }
 }
-
-
