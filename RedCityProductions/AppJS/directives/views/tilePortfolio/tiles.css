@@ -176,6 +176,10 @@
 
     }
 
+    .portfolio-tiles {
+        margin: auto;
+    }
+
     .portfolio-tile-text {
         font-size: 25px;
     }
