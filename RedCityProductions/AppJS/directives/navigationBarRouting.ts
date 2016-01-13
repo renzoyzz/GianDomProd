@@ -43,7 +43,6 @@
         private fixNavToTop() {
             let windowScroll = this.window.scrollTop();
             let navBarScroll = $('.index-nav-container-jumbo').offset().top;
-            console.log(windowScroll + ' ' + navBarScroll);
             if (windowScroll < navBarScroll) {
                 $('.index-nav-container').css({
                     display: 'none'
@@ -95,6 +94,41 @@
 
     }
 
+    class MobileMenu {
+        private scope
+        private mobileMenu
+        private menuShowing = false;
+
+        constructor(scope) {
+            this.scope = scope;
+            this.mobileMenu = document.getElementsByClassName('index-nav-mobile-choice-container');
+            this.toggleMenu();
+            window.onresize = () => {
+                if (window.innerWidth > 1000) {
+                    this.menuShowing = true;
+                    this.toggleMenu();
+                }
+            }
+        }
+
+        public toggleMenu() {
+            this.mobileMenu = document.getElementsByClassName('index-nav-mobile-choic-container');
+            if (this.mobileMenu[0].style.maxHeight == '261px' || this.mobileMenu[1].style.maxHeight == '261px' || this.menuShowing) {
+                for (let x = 0; x < this.mobileMenu.length; x++) {
+                    this.mobileMenu[x].style.maxHeight = '0px';
+                    this.menuShowing = false;
+                }
+            } else {
+                for (let x = 0; x < this.mobileMenu.length; x++) {
+                    this.mobileMenu[x].style.maxHeight = '261px';
+                    this.menuShowing = true;
+                }
+            }
+           
+        }
+
+
+    }
 
     function navigationBarRouting($location) {
         return {
@@ -116,6 +150,12 @@
                 scope.scrollToBottom = () => {
                     $("html, body").animate({ scrollTop: $(document).height() - 400 }, 2000);
                 }
+
+                let mobileMenu = new MobileMenu(scope);
+
+                scope.toggleMobileMenu = () => {
+                    mobileMenu.toggleMenu();
+                };
 
             }
         }

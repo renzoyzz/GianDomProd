@@ -229,6 +229,7 @@
     <Content Include="AppJS\directives\views\navigationBarRouting\navigation.html" />
     <Content Include="AppJS\directives\views\tilePortfolio\tiles.css" />
     <Content Include="AppJS\directives\views\tilePortfolio\tiles.html" />
+    <Content Include="AppJS\directives\views\videoBackground\video.html" />
     <Content Include="AppJS\views\about.html" />
     <Content Include="AppJS\views\contact.html" />
     <Content Include="AppJS\views\home.html" />
@@ -255,6 +256,7 @@
     <Content Include="Content\Images\DunlopTennis.jpg" />
     <Content Include="Content\Images\Logo.png" />
     <Content Include="Content\Images\makeUp.png" />
+    <Content Include="Content\Images\web_bg_test2.mp4" />
     <Content Include="Content\Videos.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -1115,6 +1117,7 @@
     <TypeScriptCompile Include="AppJS\directives\ngScopeElement.ts" />
     <TypeScriptCompile Include="AppJS\directives\portfolioTile.ts" />
     <TypeScriptCompile Include="AppJS\directives\timedCarousel.ts" />
+    <TypeScriptCompile Include="AppJS\directives\videoBackground.ts" />
     <TypeScriptCompile Include="AppJS\JS\app.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />

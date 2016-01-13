@@ -26,3 +26,5 @@
 }
 
 let redCityApp = angular.module('RedCity');
+ 
+

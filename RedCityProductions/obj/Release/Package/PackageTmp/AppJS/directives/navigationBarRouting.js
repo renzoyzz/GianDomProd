@@ -35,7 +35,6 @@ var RedCityApp;
             NavigationBarRouting.prototype.fixNavToTop = function () {
                 var windowScroll = this.window.scrollTop();
                 var navBarScroll = $('.index-nav-container-jumbo').offset().top;
-                console.log(windowScroll + ' ' + navBarScroll);
                 if (windowScroll < navBarScroll) {
                     $('.index-nav-container').css({
                         display: 'none'
@@ -77,6 +76,36 @@ var RedCityApp;
             };
             return NavigationBarRouting;
         })();
+        var MobileMenu = (function () {
+            function MobileMenu(scope) {
+                var _this = this;
+                this.menuShowing = false;
+                this.scope = scope;
+                this.mobileMenu = document.getElementsByClassName('index-nav-mobile-choice-container');
+                this.toggleMenu();
+                window.onresize = function () {
+                    if (window.innerWidth > 1000) {
+                        _this.menuShowing = true;
+                        _this.toggleMenu();
+                    }
+                };
+            }
+            MobileMenu.prototype.toggleMenu = function () {
+                if (this.mobileMenu[0].style.maxHeight == '261px' || this.mobileMenu[1].style.maxHeight == '261px' || this.menuShowing) {
+                    for (var x = 0; x < this.mobileMenu.length; x++) {
+                        this.mobileMenu[x].style.maxHeight = '0px';
+                        this.menuShowing = false;
+                    }
+                }
+                else {
+                    for (var x = 0; x < this.mobileMenu.length; x++) {
+                        this.mobileMenu[x].style.maxHeight = '261px';
+                        this.menuShowing = true;
+                    }
+                }
+            };
+            return MobileMenu;
+        })();
         function navigationBarRouting($location) {
             return {
                 templateUrl: '/AppJS/directives/views/navigationBarRouting/navigation.html',
@@ -92,6 +121,10 @@ var RedCityApp;
                     });
                     scope.scrollToBottom = function () {
                         $("html, body").animate({ scrollTop: $(document).height() - 400 }, 2000);
+                    };
+                    var mobileMenu = new MobileMenu(scope);
+                    scope.toggleMobileMenu = function () {
+                        mobileMenu.toggleMenu();
                     };
                 }
             };

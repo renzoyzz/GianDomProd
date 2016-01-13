@@ -1,13 +1,56 @@
-﻿.index-navigation-bar-container {
+﻿
+.index-nav-container {
+    z-index: 21;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    text-align: center;
+    background-color: rgba(165, 170, 67, 1);
+    -webkit-box-shadow: 0px -7px 157px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -7px 157px 9px rgba(0,0,0,0.75);
+    box-shadow: 0px -7px 157px 9px rgba(0,0,0,0.75);
+}
+
+.index-nav-container-jumbo {
+    z-index: 20;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    border-top: 2px solid white;
+    bottom: 0px;
+}
+
+
+.index-nav-container-logo-container {
+    display: block;
+    height: 100px;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    transition: all ease .2s;
+}
+
+.index-nav-logo {
+    display: inline-block;
+    background-image: url(/Content/Images/Logo.png);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    float: left;
+}
+
+.index-navigation-bar-container {
     font-size: 22px;
     color: lightgray;
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
     float: right;
+    transition: all ease .2s;
 }
 
 .index-navigation-choice {
-    color: white;
+    color: white;   
     cursor: pointer;
     padding: 5px 0px;
     width: 100px;
@@ -15,6 +58,72 @@
     transition: all ease .5s;
 }
 
+
+
+
 .index-navigation-choice:hover {
     color: white;
+}
+
+.index-nav-mobile-choice-container {
+    width: 273px;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.index-nav-mobile-choice {
+    padding: 15px 0px;
+    color: initial;
+    font-size: 17px;
+    background-color: white;
+}
+
+@media(max-width: 1000px){
+    
+
+
+.index-nav-container {
+
+    height: 70px;
+
+}
+
+.index-nav-container-jumbo {
+
+    height: 70px;
+
+}
+
+
+    .index-nav-container-logo-container {
+        display: block;
+        height: 68px;
+        width: 95%;
+        margin: auto;
+        text-align: center;
+        min-width: 410px;
+    }
+
+
+    .index-navigation-bar-container {
+        font-size: 16px;
+        width: 340px
+
+}
+
+    .index-navigation-choice {
+        width: 80px;
+    }
+
+    .index-nav-logo {
+    width: 68px;
+    height: 68px;
+
+}
+
+
+
+
+
+
 }

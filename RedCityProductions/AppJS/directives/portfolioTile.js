@@ -64,4 +64,3 @@ var RedCityApp;
         redCityApp.directive('portfolioTile', [tilePortfolio]);
     })(Directives = RedCityApp.Directives || (RedCityApp.Directives = {}));
 })(RedCityApp || (RedCityApp = {}));
-//# sourceMappingURL=portfolioTile.js.map
