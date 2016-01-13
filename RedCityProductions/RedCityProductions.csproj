@@ -263,6 +263,14 @@
     <Content Include="Content\Images\ff_home_overlay2.png" />
     <Content Include="Content\Images\ff_home_overlay3.png" />
     <Content Include="Content\Images\ff_home_overlay4.png" />
+    <Content Include="Content\Images\Logos\audi_logo.png" />
+    <Content Include="Content\Images\Logos\bmw_logo.png" />
+    <Content Include="Content\Images\Logos\canon_logo.png" />
+    <Content Include="Content\Images\Logos\fontainebleau_logo.png" />
+    <Content Include="Content\Images\Logos\nfl_logo.png" />
+    <Content Include="Content\Images\Logos\nike_logo.png" />
+    <Content Include="Content\Images\Logos\tommie_copper_logo.png" />
+    <Content Include="Content\Images\Logos\umg_logo.png" />
     <Content Include="Content\Images\overlay_mask_home.png" />
     <Content Include="Content\Images\random_section_overlay.png" />
     <Content Include="Content\Images\Space1.jpg" />
