@@ -1,105 +1,87 @@
-﻿.overlay-mask {
+﻿
+@font-face {
+    font-family: 'Gotham'; /*a name to be used later*/
+    src: url(/Content/Fonts/ufonts.com_gotham-book.ttf); /*URL to font*/
+}
+
+.overlay-mask {
     overflow: hidden;
     background-color: rgba(0,0,0,.2);
 }
 
 
 body {
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: Gotham;
     overflow-x: hidden;
 }
 
-.view-animate {
-    width: 100%;
-}
 
 
 
-.index-nav-container {
-    z-index: 21;
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    text-align: center;
-    background-color: rgba(67, 73, 83, 1);
-    border-bottom: 1px solid lightgreen;
-}
-
-.index-nav-container-jumbo {
-    z-index: 20;
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    background-color: rgba(67, 73, 83,1);
-    border-bottom: 2px solid lightgreen;
-    bottom: 0px;
-}
 
 
-.index-nav-container-logo-container {
-    display: block;
-    height: 100px;
-    width: 75%;
-    margin: auto;
-    text-align: center;
-}
-
-.index-nav-logo {
-    display: inline-block;
-    background-image: url(/Content/Images/Logo.png);
-    width: 100px;
-    height: 100px;
-    background-size: cover;
-    float: left;
-}
 .home-top-banner-jumbo {
     height: 100%;
+    background-image: url(/Content/Images/ff_home_overlay1.png);
+    background-size: cover;
     position: relative;
-    overflow: hidden;
     min-height: 700px;
-   
+}
+
+
+
+.home-top-banner-jumbo-video-background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+
+.home-top-banner-jumbo-text-container {
+    text-align: right;
+    height: 100%;
+}
+
+.home-top-banner-jumbo-logo {
+    display: inline-block;
+    margin: 50px;
+    width: 400px;
+    height: 150px;
+    background-color: black;
 }
 
 .home-top-banner-jumbo-text {
-    position: absolute;
-    height: 150px;
-    color: white;
-    top: 50%;
-    width: 100%;
-    margin-top: -150px;
+    white-space: pre;
+    text-align: center;
+    margin: 130px auto;
+    width: 50%;
+    font-size: 30px;
+    text-align: center;
 }
 
 .home-top-banner-jumbo-button {
-    width: 400px;
-    border-radius: 10px;
-    padding: 10px 0px;
-    margin:auto;
-    font-size: 50px;
-    background-color: #004489;
-    color: white;
-    transition: all ease .5s;
-    cursor: pointer;
+    width: 500px;
+    margin: auto;
 }
-
-
-.home-top-banner-jumbo-button:hover {
-    background-color: rgba(0, 68, 137, .7);
-}
-
-.home-top-banner-jumbo-text h1 {
-    font-size: 70px;
-}
-
 
 .home-top-banner-wrapper {
     position: relative;
-    color: rgba(255,255,255,1);
+   
+    color: white;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     text-align: center;
-    overflow: hidden;
 }
 
 
@@ -108,344 +90,231 @@ body {
     z-index: 2;
 }
 
-.home-top-banner-carousel {
-    margin-top: 140px;
-    font-size: 50px;
+
+.about-section {
+    overflow: hidden;
+    background-image: url(/Content/Images/About_bg_image1.jpg);
+    background-size: cover;
+    color: #ede2de;
+    position: relative;
+    height: 1000px;
+}
+
+    .about-section .body-container {
+        position: absolute;
+        bottom: 0px;
+    }
+
+.latest-work-section {
+    background-color: rgba(67, 58, 51,.95);
+    overflow: hidden;
     color: white;
 }
 
-.home-top-banner-social-bar-container {
-    display: inline-block;
-    width: 700px;
+.client-section {
+    overflow: hidden;
+    background-color: rgba(200,200,200,1);
 }
 
-.home-social-bar-line {
-    display: inline-block;
-    height: 2px;
-    background-color: red;
-    width: 200px;
-    margin-bottom: 10px;
-}
-
-.home-social-bar-button {
-    border: 2px solid white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    display: inline-block;
-    text-align: center;
-    cursor: pointer;
-    transition: all ease .5s;
-}
-
-    .home-social-bar-button:hover {
-        color: rgba(0,0,0,1);
-        background-color: white;
+    .client-section .client-logo {
+        width: 100%;
+        height: 150px;
+        margin: 15px 0px;
+        text-align: center;
     }
 
-.home-social-bar-button-logo {
-    display: inline-block;
-    text-align: center;
-    font-size: 30px;
-    width: 32px;
-    height: 32px;
-    margin-top: 8px;
+        .client-section .client-logo img {
+            height: 100%;
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+            transition: all ease .5s;
+            opacity: .5;
+        }
+
+            .client-section .client-logo img:hover {
+                -webkit-filter: grayscale(0);
+                filter: grayscale(0);
+                opacity: 1;
+            }
+
+.body-container {
+    margin: 50px 0px;
+    width: 100%;
+    overflow: hidden;
 }
 
-.home-top-banner-down-button-container {
-    margin-top: 30px;
-    font-size: 100px;
+
+
+.body {
+    max-width: 1500px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    overflow: hidden;
 }
 
-.home-top-banner-down-button {
-    cursor: pointer;
+.title-section {
+    padding: 0px 50px;
+    font-size: 40px;
     display: inline-block;
-    border-radius: 50px;
-    width: 80px;
-    height: 80px;
-    transition: all ease .5s;
-}
-
-    .home-top-banner-down-button:hover {
-        color: red;
-    }
-
-.home-top-banner-column-container {
-    display: inline-block;
-    width: 90%;
-    margin-top: 40px;
-}
-
-.home-top-banner-column {
-    display: inline-block;
+    text-align: left;
+    float: left;
     width: 30%;
-    margin: 10px;
-    vertical-align: top;
+    transition: all ease .5s;
 }
 
-.home-top-banner-column-icon {
-    font-size: 30px;
+
+.section:hover .title-section {
+    padding-left: 70px;
+}
+
+
+
+.content-section {
     display: inline-block;
-    width: 60px;
-    height: 60px;
-    background-color: red;
-    color: black;
-    border-radius: 50px;
-    text-align: center;
+    float: left;
+    width: 70%;
+    border-left: 1px solid;
+
 }
 
-    .home-top-banner-column-icon i {
-        margin-top: 13px;
+
+
+
+.content-section-padding {
+    display: inline-block;
+    float: left;
+    width: 70%;
+    padding: 0px 30px;
+    border-left: 1px solid;
+
+}
+
+
+
+.column2 {
+    text-indent: 20px;
+    text-align: left;
+    padding: 0px 30px;
+    font-size: 18px;
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.column2-no-padding {
+    text-align: left;
+    padding: 0px;
+    width: 50%;
+    display: inline-block;
+    float: left;
+
+}
+
+.column3 {
+    padding: 0px 30px;
+    font-size: 18px;
+    width: 33%;
+    display: inline-block;
+    float: left;
+}
+
+.column3-no-padding {
+    padding: 0px;
+    width: 33%;
+    display: inline-block;
+    float: left;
+}
+
+
+
+@media(max-width: 1000px) {
+
+    .home-top-banner-wrapper {
+        background-image: url(/Content/Images/audi_cover1.jpg);
+        background-size: 100% cover;
     }
 
-.home-top-banner-column-header {
-    font-size: 20px;
-    color: red;
-    margin: 15px 0px;
-}
-
-.home-top-banner-column-text {
-    display: block;
-    max-width: 400px;
-    margin: auto;
-}
-
-.home-top-banner-column-link {
-    margin: auto;
-    display: block;
-    color: red;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    cursor: pointer;
-}
-
-    .home-top-banner-column-link:hover {
-        color: red;
+    .home-top-banner-jumbo-video-background {
+        display: none;
     }
 
-.home-middle-banner-wrapper {
-    color: rgba(255,255,255,1);
-    background-image: url(http://eclair16.com/files/2009/06/acl_decked.jpg);
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-attachment: fixed;
-    text-align: center;
-    overflow: hidden;
+    .latest-work-section {
+        background-color: #433A33;
 }
 
-.home-middle-banner-button {
-    display: block;
-    background-color: black;
-    color: white;
-    width: 300px;
-    height: 50px;
-    margin: 30px auto;
-    font-size: 25px;
-    border-radius: 5px;
-    border: 1px solid red;
-}
-
-    .home-middle-banner-button:hover {
-        text-decoration: none;
-        color: white;
+    .body {
+        text-align: center;
+        width: 90%;
     }
 
-.home-middle-banner-button-text {
-    margin-top: 5px;
-}
-
-.home-middle-banner-header {
-    margin-top: 20px;
-    font-size: 50px;
-}
-
-.home-middle-banner-logo {
-    display: block;
-    margin: auto;
-    background-image: url('https://qzevents.files.wordpress.com/2015/05/intel20logo20white.png');
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    width: 200px;
-    height: 150px;
-}
-
-.home-middle-break-section {
-    background-color: white;
-    overflow: hidden;
-}
-
-.home-middle-break-section-text {
-    text-align: center;
-    margin: 60px auto;
-    width: 80%;
-    font-size: 32px;
-}
-
-    .home-middle-break-section-text i {
-        color: black;
+    .title-section {
+        display: block;
+        font-size: 40px;
+        border-bottom: 1px solid;
+        text-align: center;
+        margin: 30px 0px;
+        width: 100%;
     }
 
-.home-end-container {
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    overflow: hidden;
-}
 
-.home-end-team-container {
-    display: block;
-    margin: auto;
-    width: 80%;
-    max-width: 1200px;
-}
+    .content-section {
+        display: block;
+        float: none;
+        width: 100%;
+        border-left: 0px solid;
+    transition: all ease .5s;
 
-    .home-end-team-container .first {
+    }
+
+
+
+
+    .content-section-padding {
+        display: block;
+        float: none;
+        width: 100%;
+        padding: 0px;
+        border-left: 0px solid;
+    transition: all ease .5s;
+
+    }
+
+
+
+    .column2 {
+        padding: 0px;
+        font-size: 18px;
+        width: 100%;
+        display: block;
+
+        float: none;
+    transition: all ease .5s;
+
+    }
+
+    .column2-no-padding {
+        padding: 0px;
+        width: 100%;
+        display: block;
+        float: none;
+    transition: all ease .5s;
+
+    }
+
+    .column3 {
+        padding: 0px;
+        font-size: 18px;
+        width: 33%;
+        display: inline-block;
         float: left;
     }
 
-    .home-end-team-container .second {
-        float: right;
-    }
-
-.home-end-team-header {
-    padding: 25px 0px;
-    font-size: 50px;
-    font-weight: 600;
-    text-align: center;
-    background: red;
-    color: white;
-}
-
-.home-end-teammate-container {
-    width: 450px;
-    margin: 50px auto;
-    overflow: hidden;
-}
-
-.home-end-teammate-image {
-    margin: 40px auto;
-    width: 300px;
-    height: 300px;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    border-radius: 150px;
-    border: 2px solid orange;
-}
-
-.home-end-teammate-name {
-    color: white;
-    text-align: center;
-    font-weight: 800;
-    font-size: 40px;
-    margin: 30px auto;
-}
-
-.home-end-teammate-text {
-    font-size: 20px;
-    width: 400px;
-    margin: 40px auto;
-    text-align: center;
-    color: white;
-}
-
-.home-contact-container {
-    height: 400px;
-    overflow: hidden;
-    position: relative;
-    background: linear-gradient(to bottom, rgba(248,80,50,1) 0%, rgba(231,56,39,1) 100%);
-    color: white;
-    z-index: -1;
-}
-
-.home-contact-map {
-    width: 300px;
-    height: 300px;
-}
-
-.home-contact-container .second {
-    right: 0px;
-    bottom: 0px;
-}
-
-.home-contact-both-container {
-    width: 50%;
-    display: inline-block;
-    text-align: center;
-    position: fixed;
-    bottom: 50px;
-}
-
-.home-contact-name-number {
-    font-size: 20px;
-    margin: 40px 0px;
-    display: inline-block;
-    width: 100%;
-    text-align: left;
-}
-
-.home-contact-info-container {
-    width: 300px;
-    margin: auto;
-}
-
-@media(max-width: 1200px) {
-    .home-end-team-container .first {
-        float: none;
-    }
-
-    .home-end-team-container .second {
-        float: none;
-    }
-}
-
-@media(max-width:1000px) {
-    .home-top-banner-column {
-        display: block;
-        margin: auto;
-        width: 80%;
-        margin-bottom: 30px;
-    }
-
-    .home-end-container {
-        background-size: 100%;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-attachment: initial;
-    }
-
-    .home-top-banner-wrapper {
-        background-size: 100%;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-attachment: initial;
-    }
-
-    .home-middle-banner-wrapper {
-        background-size: 100%;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-attachment: initial;
-    }
-
-    .home-top-banner-column-text {
-        display: block;
-        font-size: 25px;
-        width: 100%;
-        max-width: 100%;
-        text-align: center;
+    .column3-no-padding {
+        padding: 0px;
+        width: 33%;
+        display: inline-block;
+        float: left;
     }
 }
 

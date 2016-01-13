@@ -35,7 +35,6 @@ var RedCityApp;
             NavigationBarRouting.prototype.fixNavToTop = function () {
                 var windowScroll = this.window.scrollTop();
                 var navBarScroll = $('.index-nav-container-jumbo').offset().top;
-                console.log(windowScroll + ' ' + navBarScroll);
                 if (windowScroll < navBarScroll) {
                     $('.index-nav-container').css({
                         display: 'none'
@@ -77,21 +76,65 @@ var RedCityApp;
             };
             return NavigationBarRouting;
         })();
+        var MobileMenu = (function () {
+            function MobileMenu(scope) {
+                var _this = this;
+                this.menuShowing = false;
+                this.scope = scope;
+                this.mobileMenu = document.getElementsByClassName('index-nav-mobile-choice-container');
+                this.toggleMenu();
+                $(document).ready(function () {
+                    window.onresize = function () {
+                        if (window.innerWidth > 1000) {
+                            _this.menuShowing = true;
+                            _this.toggleMenu();
+                        }
+                    };
+                    $(window).scroll(function () {
+                        _this.menuShowing = true;
+                        _this.toggleMenu();
+                    });
+                });
+            }
+            MobileMenu.prototype.toggleMenu = function () {
+                if (this.mobileMenu[0].style.maxHeight == '261px' || this.menuShowing) {
+                    this.hideMenu();
+                }
+                else {
+                    for (var x = 0; x < this.mobileMenu.length; x++) {
+                        this.mobileMenu[x].style.maxHeight = '261px';
+                        this.menuShowing = true;
+                    }
+                }
+            };
+            MobileMenu.prototype.hideMenu = function () {
+                for (var x = 0; x < this.mobileMenu.length; x++) {
+                    this.mobileMenu[x].style.maxHeight = '0px';
+                    this.menuShowing = false;
+                }
+            };
+            return MobileMenu;
+        })();
         function navigationBarRouting($location) {
             return {
                 templateUrl: '/AppJS/directives/views/navigationBarRouting/navigation.html',
                 scope: {},
                 link: function (scope, element, attr) {
                     var navigationBarRouting = new NavigationBarRouting(scope, $location);
+                    var mobileMenu = new MobileMenu(scope);
                     scope.updateCurrentPage = function (path) {
                         navigationBarRouting.updateCurrentPage(path);
-                        ;
+                        mobileMenu.hideMenu();
                     };
                     scope.$on('$locationChangeSuccess', function () {
                         navigationBarRouting.watchCurrentPage();
                     });
                     scope.scrollToBottom = function () {
                         $("html, body").animate({ scrollTop: $(document).height() - 400 }, 2000);
+                        mobileMenu.hideMenu();
+                    };
+                    scope.toggleMobileMenu = function () {
+                        mobileMenu.toggleMenu();
                     };
                 }
             };

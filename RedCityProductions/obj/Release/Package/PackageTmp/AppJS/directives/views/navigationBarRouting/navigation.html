@@ -1,16 +1,43 @@
-﻿<div class="index-navigation-bar-container">
+﻿
 
-    <div class="index-navigation-choice" ng-scope-element="zero"  ng-click="updateCurrentPage('/')">
-        HOME
+<div class="index-nav-container-logo-container">
+    <div class="index-navigation-choice-mobile" ng-click="toggleMobileMenu()">
+        <i class="fa fa-bars"></i>
     </div>
-    <div class="index-navigation-choice" ng-scope-element="one"ng-click="updateCurrentPage('/videos')">
-        VIDEOS
-    </div>
-    <div class="index-navigation-choice" ng-scope-element="two"  ng-click="updateCurrentPage('/about')">
-        ABOUT
-    </div>
-    <div class="index-navigation-choice" ng-scope-element="three"  ng-click="scrollToBottom()">
-        CONTACT
+    <div class="index-nav-logo">
 
     </div>
+    <div class="index-navigation-bar-container">
+
+        <div class="index-navigation-choice" ng-scope-element="zero" ng-click="updateCurrentPage('/')">
+            HOME
+        </div>
+        <div class="index-navigation-choice" ng-scope-element="one" ng-click="updateCurrentPage('/videos')">
+            VIDEOS
+        </div>
+        <div class="index-navigation-choice" ng-scope-element="two" ng-click="updateCurrentPage('/about')">
+            ABOUT
+        </div>
+        <div class="index-navigation-choice" ng-scope-element="three" ng-click="scrollToBottom()">
+            CONTACT
+        </div>
+
+    </div>
+
+</div>
+<div class="index-nav-mobile-choice-container">
+    <div class="index-nav-mobile-choice" ng-click="updateCurrentPage('/')">
+        Home
+    </div>
+    <div class="index-nav-mobile-choice" ng-click="updateCurrentPage('/videos')">
+        Videos
+    </div>
+    <div class="index-nav-mobile-choice" ng-click="updateCurrentPage('/about')">
+        About
+    </div>
+    <div class="index-nav-mobile-choice" ng-click="scrollToBottom()">
+        Contact
+    </div>
+
+
 </div>

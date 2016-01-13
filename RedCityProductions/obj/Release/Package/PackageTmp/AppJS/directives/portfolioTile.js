@@ -8,7 +8,6 @@ var RedCityApp;
                 this.scope = scope;
                 this.modalElement = this.scope.modalContainer;
                 this.tileOverlay = this.scope.tileOverlay;
-                this.modalElement.html('<iframe class="portfolio-tile-modal" src="' + this.scope.videoLink + '"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
                 this.tileOverlay.hover(function () {
                     _this.tileOverlay.css({
                         backgroundColor: _this.scope.fadeInColor

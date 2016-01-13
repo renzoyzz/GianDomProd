@@ -43,7 +43,6 @@
         private fixNavToTop() {
             let windowScroll = this.window.scrollTop();
             let navBarScroll = $('.index-nav-container-jumbo').offset().top;
-            console.log(windowScroll + ' ' + navBarScroll);
             if (windowScroll < navBarScroll) {
                 $('.index-nav-container').css({
                     display: 'none'
@@ -95,6 +94,53 @@
 
     }
 
+    class MobileMenu {
+        private scope
+        private mobileMenu
+        private menuShowing = false;
+
+        constructor(scope) {
+            this.scope = scope;
+            this.mobileMenu = document.getElementsByClassName('index-nav-mobile-choice-container');
+            this.toggleMenu();
+            $(document).ready(() => {
+                window.onresize = () => {
+                    if (window.innerWidth > 1000) {
+                        this.menuShowing = true;
+                        this.toggleMenu();
+                    }
+                }
+
+                $(window).scroll(() => {
+                    this.menuShowing = true;
+                    this.toggleMenu();
+                })
+            })
+           
+        }
+
+        public toggleMenu() {
+            if (this.mobileMenu[0].style.maxHeight == '261px' || this.menuShowing) {
+                this.hideMenu();
+            }
+            else {
+                for (var x = 0; x < this.mobileMenu.length; x++) {
+                    this.mobileMenu[x].style.maxHeight = '261px';
+                    this.menuShowing = true;
+                }
+            }
+           
+        }
+
+        public hideMenu() {
+            for (var x = 0; x < this.mobileMenu.length; x++) {
+                this.mobileMenu[x].style.maxHeight = '0px';
+                this.menuShowing = false;
+            }
+        }
+
+
+    }
 
     function navigationBarRouting($location) {
         return {
@@ -105,17 +151,29 @@
             link: (scope, element, attr) => {
                 
                 let navigationBarRouting = new NavigationBarRouting(scope, $location);
+                let mobileMenu = new MobileMenu(scope);
 
                 scope.updateCurrentPage = (path) => {
                     navigationBarRouting.updateCurrentPage(path);
-                    ;}
+                    mobileMenu.hideMenu();
+
+                };
+
                 scope.$on('$locationChangeSuccess', () => {
                     navigationBarRouting.watchCurrentPage();
                 });
 
                 scope.scrollToBottom = () => {
                     $("html, body").animate({ scrollTop: $(document).height() - 400 }, 2000);
+                    mobileMenu.hideMenu();
+
                 }
+
+               
+
+                scope.toggleMobileMenu = () => {
+                    mobileMenu.toggleMenu();
+                };
 
             }
         }
