@@ -1,7 +1,9 @@
 ﻿
 @font-face {
     font-family: 'Gotham'; /*a name to be used later*/
-    src: url(/Content/Fonts/ufonts.com_gotham-book.ttf); /*URL to font*/
+      
+  src: 
+       url('Fonts/Gotham-Medium(1).ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
 .overlay-mask {

@@ -6,7 +6,6 @@ var RedCityApp;
             function PortfolioTile(scope) {
                 this.scope = scope;
                 this.modalElement = this.scope.modalContainer;
-                this.modalElement.html('<iframe class="portfolio-tile-modal" src="' + this.scope.videoLink + '"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
                 this.hideModal();
             }
             PortfolioTile.prototype.hideModal = function () {
@@ -50,3 +49,4 @@ var RedCityApp;
         redCityApp.directive('bannerButton', [bannerButton]);
     })(Directives = RedCityApp.Directives || (RedCityApp.Directives = {}));
 })(RedCityApp || (RedCityApp = {}));
+//# sourceMappingURL=BannerButton.js.map
