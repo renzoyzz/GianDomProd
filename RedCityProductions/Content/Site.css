@@ -35,6 +35,9 @@ body {
     height: 100%;
     background-image: url(/Content/Images/ff_home_overlay1.png);
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-backgroundsize: cover;
     position: relative;
     min-height: 700px;
 }
@@ -54,7 +57,6 @@ body {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background-size: cover;
 }
 
 
@@ -92,6 +94,9 @@ body {
    
     color: white;
     background-size: cover;
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-backgroundsize: cover;
     background-attachment: fixed;
     background-position: center;
     text-align: center;
@@ -108,6 +113,9 @@ body {
     overflow: hidden;
     background-image: url(/Content/Images/About_bg_image1.jpg);
     background-size: cover;
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-backgroundsize: cover;
     color: #ede2de;
     position: relative;
     height: 1000px;
@@ -151,8 +159,11 @@ body {
             }
 
 .break-section {
-    background-image: url(/Content/Images/random_section_overlay.png);
+    background-image: url(/Content/Images/random_section_overlay2.png);
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-backgroundsize: cover;
     color: white;
     overflow: hidden;
 }
@@ -338,6 +349,9 @@ body {
     .home-top-banner-wrapper {
         background-image: url(/Content/Images/audi_cover1.jpg);
         background-size: 100% cover;
+        -webkit-background-size: 100% cover;
+        -moz-background-size: 100% cover;
+        -o-backgroundsize: 100% cover;
     }
 
     .home-top-banner-jumbo-video-background {
@@ -395,9 +409,8 @@ body {
         font-size: 18px;
         width: 100%;
         display: block;
-
         float: none;
-    transition: all ease .5s;
+        transition: all ease .5s;
 
     }
 
@@ -406,7 +419,7 @@ body {
         width: 100%;
         display: block;
         float: none;
-    transition: all ease .5s;
+        transition: all ease .5s;
 
     }
 

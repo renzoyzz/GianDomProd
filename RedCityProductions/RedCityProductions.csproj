@@ -273,6 +273,8 @@
     <Content Include="Content\Images\Logos\umg_logo.png" />
     <Content Include="Content\Images\overlay_mask_home.png" />
     <Content Include="Content\Images\random_section_overlay.png" />
+    <Content Include="Content\Images\random_section_overlay2.png" />
+    <Content Include="Content\Images\random_section_overlay3.png" />
     <Content Include="Content\Images\Space1.jpg" />
     <Content Include="Content\Images\space2.jpg" />
     <Content Include="Content\Images\space3.jpg" />
