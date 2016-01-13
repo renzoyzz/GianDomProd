@@ -9,10 +9,8 @@ var RedCityApp;
             templateUrl: '/AppJS/views/videos.html'
         })
             .when('/about', {
-            templateUrl: '/AppJS/views/about.html'
-        })
-            .when('/contact', {
-            templateUrl: '/AppJS/views/contact.html'
+            templateUrl: '/AppJS/views/home.html',
+            controller: RedCityApp.Controllers.AboutController,
         })
             .otherwise('/');
         $locationProvider.html5Mode(true);

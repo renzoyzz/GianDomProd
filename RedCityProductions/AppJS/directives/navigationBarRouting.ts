@@ -22,7 +22,7 @@
             if (this.currentPage == 0) {
                 this.fixNavToTop();
                 this.window.scroll(() => {
-                    if (this.currentPage == 0) {
+                    if (this.currentPage == 0 || this.currentPage == 2) {
                         this.fixNavToTop();
                     } else {
                         $('.index-nav-container').css({
@@ -65,18 +65,30 @@
 
         public updateCurrentPage(path) {
             this.location.path(path);
+            
         }
 
         public watchCurrentPage() {
             this.currentPage = this.pages.indexOf(this.location.path());
+           
             this.updateAnimation();
-            this.window.scrollTop(0);
+            if (this.currentPage == 2) {
+                this.window.scrollTop(1600)
+                
+            } else {
+                this.window.scrollTop(0);
+
+            }
+
         }
 
         private updateAnimation() {
-
+            let page = this.currentPage;
+            if (page == 2) {
+                page = 0;
+            }
             for (let x = 0; x < this.choiceButtons.length; x++) {
-                if (x == this.currentPage) {
+                if (x == page) {
                     this.choiceButtons[x].css({
                         color: 'rgba(255,255,255,1)'
                     });
@@ -115,6 +127,7 @@
                     this.menuShowing = true;
                     this.toggleMenu();
                 })
+                this.hideMenu();
             })
            
         }
@@ -161,7 +174,10 @@
 
                 scope.$on('$locationChangeSuccess', () => {
                     navigationBarRouting.watchCurrentPage();
+                    
                 });
+
+                
 
                 scope.scrollToBottom = () => {
                     $("html, body").animate({ scrollTop: $(document).height() - 400 }, 2000);

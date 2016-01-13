@@ -1145,6 +1145,7 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="AppJS\controllers\aboutController.ts" />
     <TypeScriptCompile Include="AppJS\directives\BannerButton.ts" />
     <TypeScriptCompile Include="AppJS\directives\navigationBarRouting.ts" />
     <TypeScriptCompile Include="AppJS\directives\ngScopeElement.ts" />

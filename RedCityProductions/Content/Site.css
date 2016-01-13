@@ -2,13 +2,16 @@
 @font-face {
     font-family: 'Gotham'; /*a name to be used later*/
       
-  src: 
-       url('Fonts/Gotham-Medium(1).ttf')  format('truetype'), /* Safari, Android, iOS */
+  src: url('/Content/Fonts/GOTHAM-MEDIUM.TTF')  format('truetype'), /* Safari, Android, iOS */
 }
 
 .overlay-mask {
     overflow: hidden;
     background-color: rgba(0,0,0,.2);
+}
+
+.page-container {
+    padding-top: 70px;
 }
 
 
@@ -111,19 +114,19 @@ body {
     }
 
 .latest-work-section {
-    background-color: rgba(67, 58, 51,.95);
+    background-color: rgba(255,255,255,1);
+    color: initial;
     overflow: hidden;
-    color: white;
 }
 
 .client-section {
     overflow: hidden;
-    background-color: rgba(200,200,200,1);
+    background-color: white;
 }
 
     .client-section .client-logo {
         width: 100%;
-        height: 150px;
+        height: 100px;
         margin: 15px 0px;
         text-align: center;
     }
@@ -142,10 +145,37 @@ body {
                 opacity: 1;
             }
 
+.break-section {
+    background-color: rgba(55, 78 , 45, .5);
+    color: white;
+    overflow: hidden;
+}
+
+.break-section .body {
+    margin-top: 60px;
+    font-size: 45px;
+}
+
+.break-section .button-container {
+    font-size: 30px;
+    border: 1px solid white;
+    cursor: pointer;
+    position: relative;
+    left: 200px;
+    width: 240px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+
 .body-container {
     margin: 50px 0px;
     width: 100%;
     overflow: hidden;
+}
+
+.client-section .body-container {
+    margin: 10px 0px;
 }
 
 
@@ -173,6 +203,20 @@ body {
     padding-left: 70px;
 }
 
+.title-section-right {
+    padding: 0px 50px;
+    font-size: 40px;
+    display: inline-block;
+    text-align: right;
+    float: right;
+    width: 30%;
+    transition: all ease .5s;
+}
+
+
+.section:hover .title-section-right {
+    padding-right: 70px;
+}
 
 
 .content-section {
@@ -196,6 +240,29 @@ body {
 }
 
 
+.content-section-right {
+    display: inline-block;
+    float: right;
+    width: 70%;
+    border-right: 1px solid;
+
+}
+
+
+
+
+.content-section-padding-right {
+    display: inline-block;
+    float: right;
+    width: 70%;
+    padding: 0px 30px;
+    border-right: 1px solid;
+
+}
+
+
+
+
 
 .column2 {
     text-indent: 20px;
@@ -216,6 +283,25 @@ body {
 
 }
 
+.column2-right {
+    text-indent: 20px;
+    text-align: left;
+    padding: 0px 30px;
+    font-size: 18px;
+    width: 50%;
+    display: inline-block;
+    float: right;
+}
+
+.column2-no-padding-right {
+    text-align: left;
+    padding: 0px;
+    width: 50%;
+    display: inline-block;
+    float: right;
+
+}
+
 .column3 {
     padding: 0px 30px;
     font-size: 18px;
@@ -230,6 +316,7 @@ body {
     display: inline-block;
     float: left;
 }
+
 
 
 
@@ -260,7 +347,8 @@ body {
         width: 90%;
     }
 
-    .title-section {
+    .title-section,
+    .title-section-right {
         display: block;
         font-size: 40px;
         border-bottom: 1px solid;
@@ -270,11 +358,12 @@ body {
     }
 
 
-    .content-section {
+    .content-section,
+    .content-section-right {
         display: block;
         float: none;
         width: 100%;
-        border-left: 0px solid;
+        border: 0px solid;
     transition: all ease .5s;
 
     }
@@ -282,12 +371,13 @@ body {
 
 
 
-    .content-section-padding {
+    .content-section-padding,
+    .content-section-padding-right {
         display: block;
         float: none;
         width: 100%;
         padding: 0px;
-        border-left: 0px solid;
+        border: 0px solid;
     transition: all ease .5s;
 
     }
@@ -311,6 +401,25 @@ body {
         display: block;
         float: none;
     transition: all ease .5s;
+
+    }
+
+        .column2-right {
+        padding: 0px;
+        font-size: 18px;
+        width: 100%;
+        display: block;
+        float: none;
+        transition: all ease .5s;
+
+    }
+
+    .column2-no-padding-right {
+        padding: 0px;
+        width: 100%;
+        display: block;
+        float: none;
+        transition: all ease .5s;
 
     }
 

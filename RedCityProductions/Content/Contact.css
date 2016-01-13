@@ -4,11 +4,19 @@
     color: white;
 }
 
+.contact-content-wrapper {
+    background-color: rgba(200,200,200,1);
+    width: 100%;
+
+    overflow: hidden;
+}
+
 .contact-information-container {
     background-color: rgba(200,200,200,1);
 }
 
 .contact-form-container {
+    overflow: hidden;
     background-color: rgba(100,100,100,1);
 }
 
@@ -55,9 +63,6 @@
 
 .contact-form-text-area {
     height: 248px;
-    max-height: 248px;
-    min-height: 248px;
-    resize: none;
     width: 95%;
     text-align: left;
 }   
