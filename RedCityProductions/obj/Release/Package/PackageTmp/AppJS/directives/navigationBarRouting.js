@@ -91,6 +91,7 @@ var RedCityApp;
                 };
             }
             MobileMenu.prototype.toggleMenu = function () {
+                this.mobileMenu = document.getElementsByClassName('index-nav-mobile-choic-container');
                 if (this.mobileMenu[0].style.maxHeight == '261px' || this.mobileMenu[1].style.maxHeight == '261px' || this.menuShowing) {
                     for (var x = 0; x < this.mobileMenu.length; x++) {
                         this.mobileMenu[x].style.maxHeight = '0px';
