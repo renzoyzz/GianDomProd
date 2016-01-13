@@ -83,16 +83,21 @@ var RedCityApp;
                 this.scope = scope;
                 this.mobileMenu = document.getElementsByClassName('index-nav-mobile-choice-container');
                 this.toggleMenu();
-                window.onresize = function () {
-                    if (window.innerWidth > 1000) {
+                $(document).ready(function () {
+                    window.onresize = function () {
+                        if (window.innerWidth > 1000) {
+                            _this.menuShowing = true;
+                            _this.toggleMenu();
+                        }
+                    };
+                    $(window).scroll(function () {
                         _this.menuShowing = true;
                         _this.toggleMenu();
-                    }
-                };
+                    });
+                });
             }
             MobileMenu.prototype.toggleMenu = function () {
-                this.mobileMenu = document.getElementsByClassName('index-nav-mobile-choic-container');
-                if (this.mobileMenu[0].style.maxHeight == '261px' || this.mobileMenu[1].style.maxHeight == '261px' || this.menuShowing) {
+                if (this.mobileMenu[0].style.maxHeight == '261px' || this.menuShowing) {
                     for (var x = 0; x < this.mobileMenu.length; x++) {
                         this.mobileMenu[x].style.maxHeight = '0px';
                         this.menuShowing = false;

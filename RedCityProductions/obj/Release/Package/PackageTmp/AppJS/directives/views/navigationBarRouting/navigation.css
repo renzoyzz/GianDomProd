@@ -9,6 +9,7 @@
     -webkit-box-shadow: 0px -7px 157px 9px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px -7px 157px 9px rgba(0,0,0,0.75);
     box-shadow: 0px -7px 157px 9px rgba(0,0,0,0.75);
+    transition: all ease .5s;
 }
 
 .index-nav-container-jumbo {
@@ -19,6 +20,8 @@
     text-align: center;
     border-top: 2px solid white;
     bottom: 0px;
+    transition: all ease .5s;
+    
 }
 
 
@@ -28,7 +31,8 @@
     width: 75%;
     margin: auto;
     text-align: center;
-    transition: all ease .2s;
+    transition: all ease .5s;
+
 }
 
 .index-nav-logo {
@@ -38,6 +42,8 @@
     height: 100px;
     background-size: cover;
     float: left;
+    transition: all ease .5s;
+
 }
 
 .index-navigation-bar-container {
@@ -46,7 +52,6 @@
     margin-top: 20px;
     text-align: center;
     float: right;
-    transition: all ease .2s;
 }
 
 .index-navigation-choice {
@@ -58,7 +63,19 @@
     transition: all ease .5s;
 }
 
-
+.index-navigation-choice-mobile {
+    position: relative;
+    top: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 5px 0px;
+    width: 50px;
+    display: inline-block;
+    transition: all ease .5s;
+    font-size: 20px;
+    float: left;
+    display: none;
+}
 
 
 .index-navigation-choice:hover {
@@ -69,6 +86,7 @@
     width: 273px;
     max-height: 0px;
     overflow: hidden;
+    transition: all linear .5s;
 }
 
 .index-nav-mobile-choice {
@@ -95,35 +113,33 @@
 }
 
 
-    .index-nav-container-logo-container {
-        display: block;
-        height: 68px;
-        width: 95%;
-        margin: auto;
-        text-align: center;
-        min-width: 410px;
-    }
+.index-nav-container-logo-container {
+    display: block;
+    height: 68px;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
 
 
     .index-navigation-bar-container {
-        font-size: 16px;
-        width: 340px
-
+    display: none;
 }
-
-    .index-navigation-choice {
-        width: 80px;
-    }
 
     .index-nav-logo {
     width: 68px;
     height: 68px;
+    float: right;
 
 }
 
+    .index-navigation-choice-mobile {
+   display: inline-block;
+}
 
 
-
-
+    .index-nav-mobile-choice-container {
+    display: block;
+}
 
 }

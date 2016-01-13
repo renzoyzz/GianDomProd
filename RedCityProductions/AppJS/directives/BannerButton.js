@@ -50,3 +50,4 @@ var RedCityApp;
         redCityApp.directive('bannerButton', [bannerButton]);
     })(Directives = RedCityApp.Directives || (RedCityApp.Directives = {}));
 })(RedCityApp || (RedCityApp = {}));
+//# sourceMappingURL=BannerButton.js.map
