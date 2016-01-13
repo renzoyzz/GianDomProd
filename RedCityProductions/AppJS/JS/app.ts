@@ -1,5 +1,5 @@
 ﻿namespace RedCityApp {
-    angular.module('RedCity', ['ngRoute', 'ngAnimate']).config((
+    angular.module('RedCity', ['ngRoute', 'ngAnimate', 'ngResource']).config((
         $routeProvider: ng.route.IRouteProvider,
         $locationProvider: ng.ILocationProvider
     ) => {

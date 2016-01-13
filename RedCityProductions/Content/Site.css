@@ -1,10 +1,15 @@
-﻿
-@font-face {
-    font-family: 'Gotham'; /*a name to be used later*/
-      
-  src: url('/Content/Fonts/GOTHAM-MEDIUM.TTF')  format('truetype'), /* Safari, Android, iOS */
-}
+﻿@font-face {
+    font-family: 'Gotham';
+    src: url('/Content/Fonts/gotham-medium1-webfont.eot');
+    src: url('/Content/Fonts/gotham-medium1-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/Content/Fonts/gotham-medium1-webfont.woff2') format('woff2'),
+         url('/Content/Fonts/gotham-medium1-webfont.woff') format('woff'),
+         url('/Content/Fonts/gotham-medium1-webfont.ttf') format('truetype'),
+         url('/Content/Fonts/gotham-medium1-webfont.svg#gotham_mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
 .overlay-mask {
     overflow: hidden;
     background-color: rgba(0,0,0,.2);
@@ -146,7 +151,8 @@ body {
             }
 
 .break-section {
-    background-color: rgba(55, 78 , 45, .5);
+    background-image: url(/Content/Images/random_section_overlay.png);
+    background-size: cover;
     color: white;
     overflow: hidden;
 }

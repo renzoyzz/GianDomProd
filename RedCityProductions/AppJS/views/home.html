@@ -49,10 +49,11 @@
 
             <div class="content-section">
                 <div class="column2">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Film Forest is a film production and new media company. We create high quality, professional level media in multiple formats. From commercials & marketing ads, to music videos & event coverage, to movies & documentaries, Film Forest carries every project from inception to completion. Able to make any budget work we shoot projects that run the gamut of production sizes. Film Forest shoots can range from small, one-man-band projects, all the way up to large format, fully staffed, multiple camera productions.
+
                 </div>
                 <div class="column2">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Originally conceived in Miami, Film Forest works and shoots all over the country. Created by a group of close friends and industry professionals, the crew at Film Forest has over ten years of production experience. Our experience in the industry has given us the veteran-level production knowledge that is needed for seeing complex projects into successful completion.
                 </div>
             </div>
         </div>
@@ -162,18 +163,19 @@
                         </div>
                     </div>
                     <div class="column2-no-padding">
-                        <div class="contact-form-container">
+                        <div class="contact-form-container" ng-controller="EmailController as ec">
                             <div class="contact-form-title">
                                 CONTACT US
                             </div>
-                            <form>
-                                <input class="contact-form-input" placeholder="First Name" type="text" />
-                                <input class="contact-form-input" placeholder="Last Name" type="text" />
-                                <input class="contact-form-input" placeholder="Phone #" type="text" />
-                                <input class="contact-form-input" placeholder="Budget" type="text" />
-                                <textarea class="contact-form-input contact-form-text-area" placeholder="Message" />
-                                <input class="contact-form-input" placeholder="Budget" type="text" />
-                                <input class="contact-form-input" placeholder="Budget" type="text" />
+                            <form ng-submit="ec.sendEmail()">
+                                <input class="contact-form-input" placeholder="First Name" type="text" ng-model="ec.email.firstName" />
+                                <input class="contact-form-input" placeholder="Last Name" type="text" ng-model="ec.email.lastName" />
+                                <input class="contact-form-input" placeholder="Phone #" type="text" ng-model="ec.email.phone" />
+                                <input class="contact-form-input" placeholder="Email" type="text" ng-model="ec.email.emailAddress"/>
+                                <textarea class="contact-form-input contact-form-text-area" placeholder="Message" ng-model="ec.email.message"/>
+                                <input class="contact-form-input" placeholder="What is 5+3" type="text"/>
+                                <button class="contact-form-input" type="submit"> Submit</button>
+
                             </form>
                            
 

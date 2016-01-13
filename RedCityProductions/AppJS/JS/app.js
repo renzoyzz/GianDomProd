@@ -1,6 +1,6 @@
 var RedCityApp;
 (function (RedCityApp) {
-    angular.module('RedCity', ['ngRoute', 'ngAnimate']).config(function ($routeProvider, $locationProvider) {
+    angular.module('RedCity', ['ngRoute', 'ngAnimate', 'ngResource']).config(function ($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
             templateUrl: '/AppJS/views/home.html'

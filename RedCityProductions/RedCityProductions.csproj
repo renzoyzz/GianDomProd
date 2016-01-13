@@ -51,6 +51,22 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SendGrid, Version=6.3.4.0, Culture=neutral, PublicKeyToken=4f047e93159395ca, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sendgrid.6.3.4\lib\SendGrid.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SendGrid.SmtpApi, Version=1.3.1.0, Culture=neutral, PublicKeyToken=2ae73662c35d80e4, processorArchitecture=MSIL">
+      <HintPath>..\packages\SendGrid.SmtpApi.1.3.1\lib\net40\SendGrid.SmtpApi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SendGridMail, Version=6.3.4.0, Culture=neutral, PublicKeyToken=4f047e93159395ca, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sendgrid.6.3.4\lib\SendGridMail.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -69,9 +85,6 @@
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http">
     </Reference>
@@ -173,6 +186,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\EmailController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
@@ -215,6 +229,7 @@
     </Compile>
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Email.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
@@ -241,12 +256,15 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Contact.css" />
+    <Content Include="Content\Font.css" />
+    <Content Include="Content\Fonts\gotham-medium1-webfont.svg" />
     <Content Include="Content\Images\About_bg_image1.jpg" />
     <Content Include="Content\Images\ff_home_overlay1.png" />
     <Content Include="Content\Images\ff_home_overlay2.png" />
     <Content Include="Content\Images\ff_home_overlay3.png" />
     <Content Include="Content\Images\ff_home_overlay4.png" />
     <Content Include="Content\Images\overlay_mask_home.png" />
+    <Content Include="Content\Images\random_section_overlay.png" />
     <Content Include="Content\Images\Space1.jpg" />
     <Content Include="Content\Images\space2.jpg" />
     <Content Include="Content\Images\space3.jpg" />
@@ -328,40 +346,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Content\Fonts\Gotham-Black%281%29.ttf" />
-    <Content Include="Content\Fonts\GOTHAM-BLACK.TTF" />
-    <Content Include="Content\Fonts\Gotham-BlackItalic%281%29.ttf" />
-    <Content Include="Content\Fonts\GOTHAM-BLACKITALIC.TTF" />
-    <Content Include="Content\Fonts\Gotham-Bold%281%29.ttf" />
-    <Content Include="Content\Fonts\GOTHAM-BOLD.TTF" />
-    <Content Include="Content\Fonts\Gotham-BoldItalic%281%29.ttf" />
-    <Content Include="Content\Fonts\GOTHAM-BOLDITALIC.TTF" />
-    <Content Include="Content\Fonts\Gotham-Bold_0%281%29.otf" />
-    <Content Include="Content\Fonts\GOTHAM-BOLD_0.OTF" />
-    <Content Include="Content\Fonts\Gotham-BookItalic_0%281%29.otf" />
-    <Content Include="Content\Fonts\GOTHAM-BOOKITALIC_0.OTF" />
-    <Content Include="Content\Fonts\Gotham-Light%281%29.ttf" />
-    <Content Include="Content\Fonts\GOTHAM-LIGHT.TTF" />
-    <Content Include="Content\Fonts\Gotham-LightItalic%281%29.ttf" />
-    <Content Include="Content\Fonts\GOTHAM-LIGHTITALIC.TTF" />
-    <Content Include="Content\Fonts\Gotham-Light_0%281%29.otf" />
-    <Content Include="Content\Fonts\GOTHAM-LIGHT_0.OTF" />
-    <Content Include="Content\Fonts\Gotham-Medium%281%29.ttf" />
-    <Content Include="Content\Fonts\GOTHAM-MEDIUM.TTF" />
-    <Content Include="Content\Fonts\Gotham-MediumItalic%281%29.ttf" />
-    <Content Include="Content\Fonts\GOTHAM-MEDIUMITALIC.TTF" />
-    <Content Include="Content\Fonts\Gotham-Thin%281%29.ttf" />
-    <Content Include="Content\Fonts\GOTHAM-THIN.TTF" />
-    <Content Include="Content\Fonts\Gotham-ThinItalic%281%29.ttf" />
-    <Content Include="Content\Fonts\GOTHAM-THINITALIC.TTF" />
-    <Content Include="Content\Fonts\Gotham-Ultra%281%29.ttf" />
-    <Content Include="Content\Fonts\GOTHAM-ULTRA.TTF" />
-    <Content Include="Content\Fonts\Gotham-UltraItalic%281%29.ttf" />
-    <Content Include="Content\Fonts\GOTHAM-ULTRAITALIC.TTF" />
-    <Content Include="Content\Fonts\Gotham-XLight%281%29.ttf" />
-    <Content Include="Content\Fonts\GOTHAM-XLIGHT.TTF" />
-    <Content Include="Content\Fonts\Gotham-XLightItalic%281%29.ttf" />
-    <Content Include="Content\Fonts\GOTHAM-XLIGHTITALIC.TTF" />
+    <Content Include="Content\Fonts\gotham-medium1-webfont.eot" />
+    <Content Include="Content\Fonts\gotham-medium1-webfont.ttf" />
+    <Content Include="Content\Fonts\gotham-medium1-webfont.woff" />
+    <Content Include="Content\Fonts\gotham-medium1-webfont.woff2" />
     <None Include="Properties\PublishProfiles\GianDomProductions.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\GoogleMaps\googleMaps.js" />
@@ -1146,6 +1134,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="AppJS\controllers\aboutController.ts" />
+    <TypeScriptCompile Include="AppJS\controllers\emailController.ts" />
     <TypeScriptCompile Include="AppJS\directives\BannerButton.ts" />
     <TypeScriptCompile Include="AppJS\directives\navigationBarRouting.ts" />
     <TypeScriptCompile Include="AppJS\directives\ngScopeElement.ts" />
