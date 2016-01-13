@@ -19,4 +19,3 @@ var RedCityApp;
     });
 })(RedCityApp || (RedCityApp = {}));
 var redCityApp = angular.module('RedCity');
-//# sourceMappingURL=app.js.map

@@ -13,6 +13,7 @@
 body {
     font-family: Gotham;
     overflow-x: hidden;
+    min-width: 500px;
 }
 
 
@@ -63,7 +64,9 @@ body {
 .home-top-banner-jumbo-text {
     white-space: pre;
     text-align: center;
-    margin: 130px auto;
+    margin: 0px auto;
+
+    margin-top: 130px;
     width: 50%;
     font-size: 30px;
     text-align: center;
@@ -228,7 +231,14 @@ body {
 
 
 
+
+
+
+
+
+
 @media(max-width: 1000px) {
+
 
     .home-top-banner-wrapper {
         background-image: url(/Content/Images/audi_cover1.jpg);
