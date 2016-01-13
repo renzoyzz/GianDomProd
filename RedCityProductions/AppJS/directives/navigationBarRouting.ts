@@ -103,23 +103,31 @@
             this.scope = scope;
             this.mobileMenu = document.getElementsByClassName('index-nav-mobile-choice-container');
             this.toggleMenu();
-            window.onresize = () => {
-                if (window.innerWidth > 1000) {
+            $(document).ready(() => {
+                window.onresize = () => {
+                    if (window.innerWidth > 1000) {
+                        this.menuShowing = true;
+                        this.toggleMenu();
+                    }
+                }
+
+                $(window).scroll(() => {
                     this.menuShowing = true;
                     this.toggleMenu();
-                }
-            }
+                })
+            })
+           
         }
 
         public toggleMenu() {
-            this.mobileMenu = document.getElementsByClassName('index-nav-mobile-choic-container');
-            if (this.mobileMenu[0].style.maxHeight == '261px' || this.mobileMenu[1].style.maxHeight == '261px' || this.menuShowing) {
-                for (let x = 0; x < this.mobileMenu.length; x++) {
+            if (this.mobileMenu[0].style.maxHeight == '261px' || this.menuShowing) {
+                for (var x = 0; x < this.mobileMenu.length; x++) {
                     this.mobileMenu[x].style.maxHeight = '0px';
                     this.menuShowing = false;
                 }
-            } else {
-                for (let x = 0; x < this.mobileMenu.length; x++) {
+            }
+            else {
+                for (var x = 0; x < this.mobileMenu.length; x++) {
                     this.mobileMenu[x].style.maxHeight = '261px';
                     this.menuShowing = true;
                 }
