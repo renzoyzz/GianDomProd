@@ -59,7 +59,7 @@ var RedCityApp;
                 this.currentPage = this.pages.indexOf(this.location.path());
                 this.updateAnimation();
                 if (this.currentPage == 2) {
-                    this.window.scrollTop(1600);
+                    this.window.scrollTop(1500);
                 }
                 else {
                     this.window.scrollTop(0);
@@ -152,4 +152,3 @@ var RedCityApp;
         redCityApp.directive('navigationBarRouting', ['$location', '$routeParams', navigationBarRouting]);
     })(Directives = RedCityApp.Directives || (RedCityApp.Directives = {}));
 })(RedCityApp || (RedCityApp = {}));
-//# sourceMappingURL=navigationBarRouting.js.map

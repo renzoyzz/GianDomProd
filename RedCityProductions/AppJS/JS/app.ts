@@ -14,7 +14,7 @@
             })
             .when('/about', {
                 templateUrl: '/AppJS/views/home.html',
-                controller: RedCityApp.Controllers.AboutController,
+                controller: RedCityApp.Controllers.AboutController
                 
             })
             .otherwise('/');

@@ -16,4 +16,3 @@ var RedCityApp;
         redCityApp.directive('videoBackground', [backgroundVideo]);
     })(Directives = RedCityApp.Directives || (RedCityApp.Directives = {}));
 })(RedCityApp || (RedCityApp = {}));
-//# sourceMappingURL=videoBackground.js.map

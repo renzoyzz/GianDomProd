@@ -10,11 +10,10 @@ var RedCityApp;
         })
             .when('/about', {
             templateUrl: '/AppJS/views/home.html',
-            controller: RedCityApp.Controllers.AboutController,
+            controller: RedCityApp.Controllers.AboutController
         })
             .otherwise('/');
         $locationProvider.html5Mode(true);
     });
 })(RedCityApp || (RedCityApp = {}));
 var redCityApp = angular.module('RedCity');
-//# sourceMappingURL=app.js.map

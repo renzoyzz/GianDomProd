@@ -73,7 +73,7 @@
            
             this.updateAnimation();
             if (this.currentPage == 2) {
-                this.window.scrollTop(1600)
+                this.window.scrollTop(1500)
                 
             } else {
                 this.window.scrollTop(0);
