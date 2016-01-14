@@ -20,8 +20,8 @@ namespace RedCityProductions.API
             var mailMessage = new SendGridMessage();
             mailMessage.AddTo("filmforest@outlook.com");
             mailMessage.From = new MailAddress(emailMessage.EmailAddress);
-            mailMessage.Subject = emailMessage.FirstName + " " + emailMessage.LastName;
-            mailMessage.Text = emailMessage.Message + "\n\nEmail: " + emailMessage.EmailAddress + "\nPhone: " + emailMessage.Phone;
+            mailMessage.Subject = "Forest Film Contact";
+            mailMessage.Text = emailMessage.Message +"\n\nName: " + emailMessage.FirstName + " " + emailMessage.LastName + "\nEmail: " + emailMessage.EmailAddress + "\nPhone: " + emailMessage.Phone;
             var transportWeb = new Web("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");
             transportWeb.DeliverAsync(mailMessage).Wait();
         }

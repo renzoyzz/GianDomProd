@@ -8,7 +8,8 @@
 
 .overlay-mask {
     overflow: hidden;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0,0,0,.5);
+
 }
 
 .page-container {
@@ -112,7 +113,7 @@ body {
     -o-backgroundsize: cover;
     color: #ede2de;
     position: relative;
-    height: 1000px;
+    height: 850px;
 }
 
     .about-section .body-container {
@@ -194,7 +195,7 @@ body {
 
 
 .body {
-    max-width: 1500px;
+    max-width: 1400px;
     width: 100%;
     display: block;
     margin: auto;
@@ -448,3 +449,5 @@ body {
         float: left;
     }
 }
+
+

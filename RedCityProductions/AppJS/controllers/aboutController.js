@@ -4,7 +4,7 @@ var RedCityApp;
     (function (Controllers) {
         var AboutController = (function () {
             function AboutController() {
-                $("html, body").scrollTop($('.about-section').offset().top);
+                $("html, body").scrollTop(1500);
             }
             return AboutController;
         })();

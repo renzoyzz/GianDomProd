@@ -1,7 +1,19 @@
-﻿.video-section {
+﻿.video-section-background {
+    background-color: white;
+}
+
+.video-section-header {
+    font-size: 40px;
+    width: 80%;
+    margin: 15px auto;
+    white-space:pre-line;
+}
+
+.video-section {
     color: white;
     overflow: hidden;
-    background-color: dimgrey;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .video-section .portfolio-tile {
@@ -11,12 +23,18 @@
 }
 
 .video-section .body-container {
+    
     border-bottom: 2px solid;
     margin: 0px;
 }
 
+.video-second-section .body-container {
+    border-bottom: 0px solid;
+}
+
 .video-section .body {
     border-bottom: 10px solid;
+    
 }
 
 .video-section .video-title {
@@ -36,4 +54,16 @@
         margin-bottom: 20px;
         border-bottom: 2px solid;
     }
+}
+
+@media(min-width: 1500px) {
+    .video-section .body-container {
+        background-size: 1500px;
+        background-position: center;
+        background-repeat: repeat-x;
+
+    }
+
+
+
 }

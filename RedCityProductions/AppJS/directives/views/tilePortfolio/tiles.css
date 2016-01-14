@@ -55,7 +55,6 @@
 
 .portfolio-tile:hover .portfolio-tile-overlay {
     background-color: rgba(0,0,0,.8);
-    border-bottom: 4px solid lightgreen;
 }
 
 .portfolio-tile:hover .portfolio-tile-logo {
@@ -66,50 +65,13 @@
     opacity: 1;
 }
 
-.portfolio-tile-logo {
-    position: absolute;
-    height: 150px;
-    width: 200px;
-    top: 50%;
-    margin-top: -75px;
-    left: 50%;
-    margin-left: -100px;
-    background-size: cover;
-    transition: all ease .5s;
-}
-
 .portfolio-tile-text {
-    font-size: 20px;
-    height: 100px;
-    width: 260px;
+    font-size: 25px;
     position: absolute;
-    top: 50%;
-    margin-top: -50px;
-    left: 50%;
-    margin-left:-130px;
-    overflow: hidden;
-    bottom: 10px;
-    transition: all linear .2s;
-    transition-delay: .2s;
-    text-align: center;
+    left: 20px;
+    top: 15px;
     opacity: 0;
-}
-
-.portfolio-tile-button {
-    padding: 5px 0px;
-    width: 250px;
-    margin:auto;
-    border-radius: 5px;
-    border: 2px solid white;
-    background-color: transparent;
-    margin-top: 20px;
-    transition: all ease .5s;
-}
-
-.portfolio-tile-button:hover {
-    color: transparent;
-    background-color: white;
-    color: black;
+    transition: all ease .2s;
 }
 
 

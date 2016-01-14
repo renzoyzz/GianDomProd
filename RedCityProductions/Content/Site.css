@@ -7,8 +7,10 @@
 }
 
 .overlay-mask {
+  
     overflow: hidden;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0,0,0,.35);
+
 }
 
 .page-container {
@@ -105,7 +107,7 @@ body {
 
 .about-section {
     overflow: hidden;
-    background-image: url(/Content/Images/About_bg_image1.jpg);
+    background-image: url(/Content/Images/SplashArt/About_Splash.jpg);
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -121,14 +123,16 @@ body {
     }
 
 .latest-work-section {
-    background-color: rgba(255,255,255,1);
+    background-color: rgb(210,210,210);
+;
     color: initial;
     overflow: hidden;
 }
 
 .client-section {
     overflow: hidden;
-    background-color: white;
+        background-color: rgb(210,210,210);
+
 }
 
     .client-section .client-logo {
@@ -194,7 +198,7 @@ body {
 
 
 .body {
-    max-width: 1500px;
+    max-width: 1400px;
     width: 100%;
     display: block;
     margin: auto;
@@ -448,3 +452,5 @@ body {
         float: left;
     }
 }
+
+

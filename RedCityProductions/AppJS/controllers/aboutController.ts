@@ -4,7 +4,7 @@
 
 
         constructor() {
-            $("html, body").scrollTop($('.about-section').offset().top);
+            $("html, body").scrollTop(1500);
 
         }
 

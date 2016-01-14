@@ -258,11 +258,18 @@
     <Content Include="Content\Contact.css" />
     <Content Include="Content\Font.css" />
     <Content Include="Content\Fonts\gotham-medium1-webfont.svg" />
-    <Content Include="Content\Images\About_bg_image1.jpg" />
+    <Content Include="Content\Images\1.jpg" />
+    <Content Include="Content\Images\140212_FT_Megadrought_13.jpg" />
+    <Content Include="Content\Images\140651_1.jpg" />
+    <Content Include="Content\Images\6810112-snowflakes-falling-background.jpg" />
+    <Content Include="Content\Images\6914545-autumn-red-forest.jpg" />
+    <Content Include="Content\Images\SplashArt\About_Splash.jpg" />
+    <Content Include="Content\Images\cold-snow-nature-winter2.jpg" />
     <Content Include="Content\Images\ff_home_overlay1.png" />
     <Content Include="Content\Images\ff_home_overlay2.png" />
     <Content Include="Content\Images\ff_home_overlay3.png" />
     <Content Include="Content\Images\ff_home_overlay4.png" />
+    <Content Include="Content\Images\Green-Forest-green-34594105-1600-1200.jpg" />
     <Content Include="Content\Images\Logos\audi_logo.png" />
     <Content Include="Content\Images\Logos\bmw_logo.png" />
     <Content Include="Content\Images\Logos\canon_logo.png" />
@@ -285,6 +292,22 @@
     <Content Include="Content\Images\DunlopTennis.jpg" />
     <Content Include="Content\Images\Logo.png" />
     <Content Include="Content\Images\makeUp.png" />
+    <Content Include="Content\Images\summer_forest_wp_by_vally5-d614t9s.jpg" />
+    <Content Include="Content\Images\Tree-Closeup.jpg" />
+    <Content Include="Content\Images\Video overlay2.png" />
+    <Content Include="Content\Images\Video overlay3.png" />
+    <Content Include="Content\Images\Video overlay4.png" />
+    <Content Include="Content\Images\VideoPageBackgrounds\1-audi-commercial.jpeg" />
+    <Content Include="Content\Images\VideoPageBackgrounds\10-Inthemix-shortfilm.jpeg" />
+    <Content Include="Content\Images\VideoPageBackgrounds\2-HC-commercial.jpeg" />
+    <Content Include="Content\Images\VideoPageBackgrounds\3-killem-musicvideo.jpeg" />
+    <Content Include="Content\Images\VideoPageBackgrounds\4-lifecell-commercial.jpeg" />
+    <Content Include="Content\Images\VideoPageBackgrounds\5-magic-shortfilm.jpeg" />
+    <Content Include="Content\Images\VideoPageBackgrounds\6-coffeewine-commercial.jpeg" />
+    <Content Include="Content\Images\VideoPageBackgrounds\7-bytheocean-musicvideo.jpeg" />
+    <Content Include="Content\Images\VideoPageBackgrounds\8-champion-commercial.jpeg" />
+    <Content Include="Content\Images\VideoPageBackgrounds\9-CYLD-musicvideo.jpeg" />
+    <Content Include="Content\Images\Video_section_overlay1.png" />
     <Content Include="Content\Images\web_bg_test2.mp4" />
     <Content Include="Content\Videos.css" />
     <Content Include="favicon.ico" />
@@ -1137,6 +1160,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Images\TileImages\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

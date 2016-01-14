@@ -19,7 +19,7 @@
             this.location = location;
             this.pushButtonsToArray();
             this.watchCurrentPage();
-            if (this.currentPage == 0) {
+            if (this.currentPage == 0 || this.currentPage == 2 ) {
                 this.fixNavToTop();
                 this.window.scroll(() => {
                     if (this.currentPage == 0 || this.currentPage == 2) {
@@ -72,13 +72,11 @@
             this.currentPage = this.pages.indexOf(this.location.path());
            
             this.updateAnimation();
-            if (this.currentPage == 2) {
-                this.window.scrollTop(1500)
-                
-            } else {
+            if (this.currentPage != 2) {
                 this.window.scrollTop(0);
-
             }
+
+            
 
         }
 
@@ -133,12 +131,12 @@
         }
 
         public toggleMenu() {
-            if (this.mobileMenu[0].style.maxHeight == '261px' || this.menuShowing) {
+            if (this.mobileMenu[0].style.maxHeight == '350px' || this.menuShowing) {
                 this.hideMenu();
             }
             else {
                 for (var x = 0; x < this.mobileMenu.length; x++) {
-                    this.mobileMenu[x].style.maxHeight = '261px';
+                    this.mobileMenu[x].style.maxHeight = '350px';
                     this.menuShowing = true;
                 }
             }
@@ -180,7 +178,7 @@
                 
 
                 scope.scrollToBottom = () => {
-                    $("html, body").animate({ scrollTop: $(document).height() - 400 }, 2000);
+                    $("html, body").animate({ scrollTop: $(document).height() - 600 }, 2000);
                     mobileMenu.hideMenu();
 
                 }
