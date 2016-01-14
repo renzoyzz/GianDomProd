@@ -2,10 +2,10 @@
 .index-nav-container {
     z-index: 21;
     width: 100%;
-    height: 100px;
+    height: 70px;
     position: fixed;
     text-align: center;
-    background-color: rgba(55, 78 , 45, 1);
+    background-color: rgba(14, 45, 18, 1);
 
     transition: all ease .5s;
 }
@@ -14,7 +14,7 @@
     z-index: 20;
     position: absolute;
     width: 100%;
-    height: 100px;
+    height: 70px;
     text-align: center;
     border-top: 2px solid white;
     bottom: 0px;
@@ -25,7 +25,7 @@
 
 .index-nav-container-logo-container {
     display: block;
-    height: 100px;
+    height: 70px;
     width: 75%;
     margin: auto;
     text-align: center;
@@ -47,7 +47,7 @@
 .index-navigation-bar-container {
     font-size: 22px;
     color: lightgray;
-    margin-top: 30px;
+    margin-top: 15px;
     text-align: center;
     float: right;
 }
@@ -64,13 +64,14 @@
 .index-navigation-choice-mobile {
     position: relative;
     top: 20px;
+    margin-bottom: 10px;
     color: white;
     cursor: pointer;
     padding: 5px 0px;
     width: 50px;
     display: inline-block;
     transition: all ease .5s;
-    font-size: 20px;
+    font-size: 50px;
     float: left;
     display: none;
 }
@@ -81,7 +82,10 @@
 }
 
 .index-nav-mobile-choice-container {
-    width: 273px;
+    width: 100%;
+    position: relative;
+    top: 30px;
+    background-color: rgba(80,80,80,1);
     max-height: 0px;
     overflow: hidden;
     transition: all linear .5s;
@@ -90,9 +94,12 @@
 .index-nav-mobile-choice {
     padding: 15px 0px;
     color: initial;
-    font-size: 17px;
+    font-size: 50px;
     background-color: white;
+    cursor: pointer;
 }
+
+
 
 @media(max-width: 1000px){
     
@@ -100,13 +107,13 @@
 
 .index-nav-container {
 
-    height: 70px;
+    height: 100px;
 
 }
 
 .index-nav-container-jumbo {
 
-    height: 70px;
+    height: 100px;
 
 }
 

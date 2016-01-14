@@ -11,3 +11,4 @@ var RedCityApp;
         Controllers.AboutController = AboutController;
     })(Controllers = RedCityApp.Controllers || (RedCityApp.Controllers = {}));
 })(RedCityApp || (RedCityApp = {}));
+//# sourceMappingURL=aboutController.js.map

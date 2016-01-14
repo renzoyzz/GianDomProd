@@ -6,10 +6,10 @@
     font-size: 40px;
     width: 80%;
     margin: 15px auto;
-    white-space:pre-line;
 }
 
 .video-section {
+
     color: white;
     overflow: hidden;
     background-size: cover;
@@ -23,16 +23,20 @@
 }
 
 .video-section .body-container {
-    
+
     border-bottom: 2px solid;
     margin: 0px;
 }
 
 .video-second-section .body-container {
+
+
     border-bottom: 0px solid;
 }
 
 .video-section .body {
+
+
     border-bottom: 10px solid;
     
 }
@@ -40,14 +44,22 @@
 .video-section .video-title {
   margin-top: 25%;
   text-align: center;
+
 }
 
 .video-section .video-subtitle {
+        font-family: Gotham_light;
+
+    font-size: 15px;
     text-align:center;
 
 }
 
 @media(max-width: 1000px){
+    .page-container {
+        padding-top: 100px;
+    }
+
     .video-section .video-title {
         padding: 20px 0px;
         margin-top: 0px;

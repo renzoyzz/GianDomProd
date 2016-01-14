@@ -1,12 +1,12 @@
 ﻿.contact-section {
-    background-color: white;
+            background-color: rgb(240,240,240);
+
     overflow: hidden;
 }
 
 .contact-content-wrapper {
     background-color: rgba(200,200,200,1);
     width: 100%;
-
     overflow: hidden;
 }
 

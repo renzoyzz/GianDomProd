@@ -54,3 +54,4 @@ var RedCityApp;
         redCityApp.controller('EmailController', EmailSenderController);
     })(Controllers = RedCityApp.Controllers || (RedCityApp.Controllers = {}));
 })(RedCityApp || (RedCityApp = {}));
+//# sourceMappingURL=emailController.js.map

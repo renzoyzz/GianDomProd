@@ -104,12 +104,12 @@ var RedCityApp;
                 });
             }
             MobileMenu.prototype.toggleMenu = function () {
-                if (this.mobileMenu[0].style.maxHeight == '261px' || this.menuShowing) {
+                if (this.mobileMenu[0].style.maxHeight == '350px' || this.menuShowing) {
                     this.hideMenu();
                 }
                 else {
                     for (var x = 0; x < this.mobileMenu.length; x++) {
-                        this.mobileMenu[x].style.maxHeight = '261px';
+                        this.mobileMenu[x].style.maxHeight = '350px';
                         this.menuShowing = true;
                     }
                 }
