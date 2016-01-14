@@ -152,4 +152,3 @@ var RedCityApp;
         redCityApp.directive('navigationBarRouting', ['$location', '$routeParams', navigationBarRouting]);
     })(Directives = RedCityApp.Directives || (RedCityApp.Directives = {}));
 })(RedCityApp || (RedCityApp = {}));
-//# sourceMappingURL=navigationBarRouting.js.map
