@@ -16,7 +16,7 @@ var RedCityApp;
                 if (this.currentPage == 0) {
                     this.fixNavToTop();
                     this.window.scroll(function () {
-                        if (_this.currentPage == 0) {
+                        if (_this.currentPage == 0 || _this.currentPage == 2) {
                             _this.fixNavToTop();
                         }
                         else {
@@ -58,11 +58,20 @@ var RedCityApp;
             NavigationBarRouting.prototype.watchCurrentPage = function () {
                 this.currentPage = this.pages.indexOf(this.location.path());
                 this.updateAnimation();
-                this.window.scrollTop(0);
+                if (this.currentPage == 2) {
+                    this.window.scrollTop(1600);
+                }
+                else {
+                    this.window.scrollTop(0);
+                }
             };
             NavigationBarRouting.prototype.updateAnimation = function () {
+                var page = this.currentPage;
+                if (page == 2) {
+                    page = 0;
+                }
                 for (var x = 0; x < this.choiceButtons.length; x++) {
-                    if (x == this.currentPage) {
+                    if (x == page) {
                         this.choiceButtons[x].css({
                             color: 'rgba(255,255,255,1)'
                         });
@@ -94,6 +103,7 @@ var RedCityApp;
                         _this.menuShowing = true;
                         _this.toggleMenu();
                     });
+                    _this.hideMenu();
                 });
             }
             MobileMenu.prototype.toggleMenu = function () {

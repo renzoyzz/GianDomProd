@@ -43,17 +43,19 @@
     cursor: pointer;
     overflow: hidden;
     text-align: center;
+    color: white;
 }
 
 .portfolio-tile-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    transition: all ease .5s;
+    transition: background-color ease .2s;
 }
 
 .portfolio-tile:hover .portfolio-tile-overlay {
     background-color: rgba(0,0,0,.8);
+    border-bottom: 4px solid lightgreen;
 }
 
 .portfolio-tile:hover .portfolio-tile-logo {
