@@ -1,15 +1,11 @@
 ﻿@font-face {
     font-family: 'Gotham';
     src: url('/Content/Fonts/gotham-medium1-webfont.eot');
-    src: url('/Content/Fonts/gotham-medium1-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/Content/Fonts/gotham-medium1-webfont.woff2') format('woff2'),
-         url('/Content/Fonts/gotham-medium1-webfont.woff') format('woff'),
-         url('/Content/Fonts/gotham-medium1-webfont.ttf') format('truetype'),
-         url('/Content/Fonts/gotham-medium1-webfont.svg#gotham_mediumregular') format('svg');
+    src: url('/Content/Fonts/gotham-medium1-webfont.eot?#iefix') format('embedded-opentype'), url('/Content/Fonts/gotham-medium1-webfont.woff2') format('woff2'), url('/Content/Fonts/gotham-medium1-webfont.woff') format('woff'), url('/Content/Fonts/gotham-medium1-webfont.ttf') format('truetype'), url('/Content/Fonts/gotham-medium1-webfont.svg#gotham_mediumregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
+
 .overlay-mask {
     overflow: hidden;
     background-color: rgba(0,0,0,.2);
@@ -66,18 +62,17 @@ body {
 }
 
 .home-top-banner-jumbo-logo {
+    font-size: 15px;
     display: inline-block;
     margin: 50px;
     width: 400px;
     height: 150px;
-    background-color: black;
 }
 
 .home-top-banner-jumbo-text {
     white-space: pre;
     text-align: center;
     margin: 0px auto;
-
     margin-top: 130px;
     width: 50%;
     font-size: 30px;
@@ -85,16 +80,15 @@ body {
 }
 
 .home-top-banner-jumbo-button {
-    width: 500px;
+    width: 300px;
     margin: auto;
 }
 
 .home-top-banner-wrapper {
     position: relative;
-   
     color: white;
     background-size: cover;
-     -webkit-background-size: cover;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-backgroundsize: cover;
     background-attachment: fixed;
@@ -113,7 +107,7 @@ body {
     overflow: hidden;
     background-image: url(/Content/Images/About_bg_image1.jpg);
     background-size: cover;
-     -webkit-background-size: cover;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-backgroundsize: cover;
     color: #ede2de;
@@ -166,23 +160,25 @@ body {
     -o-backgroundsize: cover;
     color: white;
     overflow: hidden;
+
 }
 
-.break-section .body {
-    margin-top: 60px;
-    font-size: 45px;
-}
+    .break-section .body {
+        margin-top: 60px;
+        font-size: 45px;
+    }
 
-.break-section .button-container {
-    font-size: 30px;
-    border: 1px solid white;
-    cursor: pointer;
-    position: relative;
-    left: 200px;
-    width: 240px;
-    margin: 30px auto;
-    text-align: center;
-}
+    .break-section .button-container {
+        font-size: 30px;
+        border: 1px solid white;
+        cursor: pointer;
+        position: relative;
+        left: 200px;
+        width: 240px;
+        margin: 30px auto;
+        text-align: center;
+        transition: all ease .2s;
+    }
 
 
 .body-container {
@@ -241,7 +237,6 @@ body {
     float: left;
     width: 70%;
     border-left: 1px solid;
-
 }
 
 
@@ -253,7 +248,6 @@ body {
     width: 70%;
     padding: 0px 30px;
     border-left: 1px solid;
-
 }
 
 
@@ -262,7 +256,6 @@ body {
     float: right;
     width: 70%;
     border-right: 1px solid;
-
 }
 
 
@@ -274,7 +267,6 @@ body {
     width: 70%;
     padding: 0px 30px;
     border-right: 1px solid;
-
 }
 
 
@@ -297,7 +289,6 @@ body {
     width: 50%;
     display: inline-block;
     float: left;
-
 }
 
 .column2-right {
@@ -316,7 +307,6 @@ body {
     width: 50%;
     display: inline-block;
     float: right;
-
 }
 
 .column3 {
@@ -358,9 +348,16 @@ body {
         display: none;
     }
 
-    .latest-work-section {
-        background-color: #433A33;
-}
+  
+
+    .break-section .button-container {
+        font-size: 30px;
+        cursor: pointer;
+        position: relative;
+        left: 0px;
+        width: 240px;
+    }
+
 
     .body {
         text-align: center;
@@ -384,8 +381,7 @@ body {
         float: none;
         width: 100%;
         border: 0px solid;
-    transition: all ease .5s;
-
+        transition: all ease .5s;
     }
 
 
@@ -398,8 +394,7 @@ body {
         width: 100%;
         padding: 0px;
         border: 0px solid;
-    transition: all ease .5s;
-
+        transition: all ease .5s;
     }
 
 
@@ -411,7 +406,6 @@ body {
         display: block;
         float: none;
         transition: all ease .5s;
-
     }
 
     .column2-no-padding {
@@ -420,17 +414,15 @@ body {
         display: block;
         float: none;
         transition: all ease .5s;
-
     }
 
-        .column2-right {
+    .column2-right {
         padding: 0px;
         font-size: 18px;
         width: 100%;
         display: block;
         float: none;
         transition: all ease .5s;
-
     }
 
     .column2-no-padding-right {
@@ -439,7 +431,6 @@ body {
         display: block;
         float: none;
         transition: all ease .5s;
-
     }
 
     .column3 {
@@ -457,5 +448,3 @@ body {
         float: left;
     }
 }
-
-
