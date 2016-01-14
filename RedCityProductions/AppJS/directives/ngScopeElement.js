@@ -20,3 +20,4 @@ var ProfilePage;
         redCityApp.directive('ngScopeElement', [ngScopeElement]);
     })(Directives = ProfilePage.Directives || (ProfilePage.Directives = {}));
 })(ProfilePage || (ProfilePage = {}));
+//# sourceMappingURL=ngScopeElement.js.map
