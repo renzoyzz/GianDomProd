@@ -257,6 +257,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Contact.css" />
     <Content Include="Content\Font.css" />
+    <Content Include="Content\Fonts\gotham-light1-webfont.svg" />
     <Content Include="Content\Fonts\gotham-medium1-webfont.svg" />
     <Content Include="Content\Images\1.jpg" />
     <Content Include="Content\Images\140212_FT_Megadrought_13.jpg" />
@@ -383,6 +384,10 @@
     <Content Include="Content\Fonts\gotham-medium1-webfont.ttf" />
     <Content Include="Content\Fonts\gotham-medium1-webfont.woff" />
     <Content Include="Content\Fonts\gotham-medium1-webfont.woff2" />
+    <Content Include="Content\Fonts\gotham-light1-webfont.eot" />
+    <Content Include="Content\Fonts\gotham-light1-webfont.ttf" />
+    <Content Include="Content\Fonts\gotham-light1-webfont.woff" />
+    <Content Include="Content\Fonts\gotham-light1-webfont.woff2" />
     <None Include="Properties\PublishProfiles\GianDomProductions.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\GoogleMaps\googleMaps.js" />
