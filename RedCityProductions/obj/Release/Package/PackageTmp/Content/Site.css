@@ -1,7 +1,9 @@
-﻿
-@font-face {
-    font-family: 'Gotham'; /*a name to be used later*/
-    src: url(/Content/Fonts/ufonts.com_gotham-book.ttf); /*URL to font*/
+﻿@font-face {
+    font-family: 'Gotham';
+    src: url('/Content/Fonts/gotham-medium1-webfont.eot');
+    src: url('/Content/Fonts/gotham-medium1-webfont.eot?#iefix') format('embedded-opentype'), url('/Content/Fonts/gotham-medium1-webfont.woff2') format('woff2'), url('/Content/Fonts/gotham-medium1-webfont.woff') format('woff'), url('/Content/Fonts/gotham-medium1-webfont.ttf') format('truetype'), url('/Content/Fonts/gotham-medium1-webfont.svg#gotham_mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .overlay-mask {
@@ -9,10 +11,15 @@
     background-color: rgba(0,0,0,.2);
 }
 
+.page-container {
+    padding-top: 70px;
+}
+
 
 body {
     font-family: Gotham;
     overflow-x: hidden;
+    min-width: 500px;
 }
 
 
@@ -24,6 +31,9 @@ body {
     height: 100%;
     background-image: url(/Content/Images/ff_home_overlay1.png);
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-backgroundsize: cover;
     position: relative;
     min-height: 700px;
 }
@@ -43,7 +53,6 @@ body {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background-size: cover;
 }
 
 
@@ -53,32 +62,35 @@ body {
 }
 
 .home-top-banner-jumbo-logo {
+    font-size: 15px;
     display: inline-block;
     margin: 50px;
     width: 400px;
     height: 150px;
-    background-color: black;
 }
 
 .home-top-banner-jumbo-text {
     white-space: pre;
     text-align: center;
-    margin: 130px auto;
+    margin: 0px auto;
+    margin-top: 130px;
     width: 50%;
     font-size: 30px;
     text-align: center;
 }
 
 .home-top-banner-jumbo-button {
-    width: 500px;
+    width: 300px;
     margin: auto;
 }
 
 .home-top-banner-wrapper {
     position: relative;
-   
     color: white;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-backgroundsize: cover;
     background-attachment: fixed;
     background-position: center;
     text-align: center;
@@ -95,6 +107,9 @@ body {
     overflow: hidden;
     background-image: url(/Content/Images/About_bg_image1.jpg);
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-backgroundsize: cover;
     color: #ede2de;
     position: relative;
     height: 1000px;
@@ -106,19 +121,19 @@ body {
     }
 
 .latest-work-section {
-    background-color: rgba(67, 58, 51,.95);
+    background-color: rgba(255,255,255,1);
+    color: initial;
     overflow: hidden;
-    color: white;
 }
 
 .client-section {
     overflow: hidden;
-    background-color: rgba(200,200,200,1);
+    background-color: white;
 }
 
     .client-section .client-logo {
         width: 100%;
-        height: 150px;
+        height: 100px;
         margin: 15px 0px;
         text-align: center;
     }
@@ -137,10 +152,43 @@ body {
                 opacity: 1;
             }
 
+.break-section {
+    background-image: url(/Content/Images/random_section_overlay2.png);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-backgroundsize: cover;
+    color: white;
+    overflow: hidden;
+
+}
+
+    .break-section .body {
+        margin-top: 60px;
+        font-size: 45px;
+    }
+
+    .break-section .button-container {
+        font-size: 30px;
+        border: 1px solid white;
+        cursor: pointer;
+        position: relative;
+        left: 200px;
+        width: 240px;
+        margin: 30px auto;
+        text-align: center;
+        transition: all ease .2s;
+    }
+
+
 .body-container {
     margin: 50px 0px;
     width: 100%;
     overflow: hidden;
+}
+
+.client-section .body-container {
+    margin: 10px 0px;
 }
 
 
@@ -168,6 +216,20 @@ body {
     padding-left: 70px;
 }
 
+.title-section-right {
+    padding: 0px 50px;
+    font-size: 40px;
+    display: inline-block;
+    text-align: right;
+    float: right;
+    width: 30%;
+    transition: all ease .5s;
+}
+
+
+.section:hover .title-section-right {
+    padding-right: 70px;
+}
 
 
 .content-section {
@@ -175,7 +237,6 @@ body {
     float: left;
     width: 70%;
     border-left: 1px solid;
-
 }
 
 
@@ -187,8 +248,28 @@ body {
     width: 70%;
     padding: 0px 30px;
     border-left: 1px solid;
-
 }
+
+
+.content-section-right {
+    display: inline-block;
+    float: right;
+    width: 70%;
+    border-right: 1px solid;
+}
+
+
+
+
+.content-section-padding-right {
+    display: inline-block;
+    float: right;
+    width: 70%;
+    padding: 0px 30px;
+    border-right: 1px solid;
+}
+
+
 
 
 
@@ -208,7 +289,24 @@ body {
     width: 50%;
     display: inline-block;
     float: left;
+}
 
+.column2-right {
+    text-indent: 20px;
+    text-align: left;
+    padding: 0px 30px;
+    font-size: 18px;
+    width: 50%;
+    display: inline-block;
+    float: right;
+}
+
+.column2-no-padding-right {
+    text-align: left;
+    padding: 0px;
+    width: 50%;
+    display: inline-block;
+    float: right;
 }
 
 .column3 {
@@ -228,27 +326,46 @@ body {
 
 
 
+
+
+
+
+
+
+
 @media(max-width: 1000px) {
+
 
     .home-top-banner-wrapper {
         background-image: url(/Content/Images/audi_cover1.jpg);
         background-size: 100% cover;
+        -webkit-background-size: 100% cover;
+        -moz-background-size: 100% cover;
+        -o-backgroundsize: 100% cover;
     }
 
     .home-top-banner-jumbo-video-background {
         display: none;
     }
 
-    .latest-work-section {
-        background-color: #433A33;
-}
+  
+
+    .break-section .button-container {
+        font-size: 30px;
+        cursor: pointer;
+        position: relative;
+        left: 0px;
+        width: 240px;
+    }
+
 
     .body {
         text-align: center;
         width: 90%;
     }
 
-    .title-section {
+    .title-section,
+    .title-section-right {
         display: block;
         font-size: 40px;
         border-bottom: 1px solid;
@@ -258,26 +375,26 @@ body {
     }
 
 
-    .content-section {
+    .content-section,
+    .content-section-right {
         display: block;
         float: none;
         width: 100%;
-        border-left: 0px solid;
-    transition: all ease .5s;
-
+        border: 0px solid;
+        transition: all ease .5s;
     }
 
 
 
 
-    .content-section-padding {
+    .content-section-padding,
+    .content-section-padding-right {
         display: block;
         float: none;
         width: 100%;
         padding: 0px;
-        border-left: 0px solid;
-    transition: all ease .5s;
-
+        border: 0px solid;
+        transition: all ease .5s;
     }
 
 
@@ -287,10 +404,8 @@ body {
         font-size: 18px;
         width: 100%;
         display: block;
-
         float: none;
-    transition: all ease .5s;
-
+        transition: all ease .5s;
     }
 
     .column2-no-padding {
@@ -298,8 +413,24 @@ body {
         width: 100%;
         display: block;
         float: none;
-    transition: all ease .5s;
+        transition: all ease .5s;
+    }
 
+    .column2-right {
+        padding: 0px;
+        font-size: 18px;
+        width: 100%;
+        display: block;
+        float: none;
+        transition: all ease .5s;
+    }
+
+    .column2-no-padding-right {
+        padding: 0px;
+        width: 100%;
+        display: block;
+        float: none;
+        transition: all ease .5s;
     }
 
     .column3 {
@@ -317,5 +448,3 @@ body {
         float: left;
     }
 }
-
-

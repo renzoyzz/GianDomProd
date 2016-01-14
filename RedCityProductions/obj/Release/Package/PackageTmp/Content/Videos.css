@@ -1,115 +1,39 @@
-﻿.video-top-banner-wrapper {
-    position: relative;
-    background-image: url(https://media.giphy.com/media/145zKmWbS9Pj7a/giphy.gif);
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    text-align: center;
+﻿.video-section {
     color: white;
     overflow: hidden;
+    background-color: dimgrey;
 }
 
-.video-top-banner-header {
-    margin-top: 150px;
-    margin-bottom: 50px;
-    font-size: 100px;
-    font-weight: 600;
+.video-section .portfolio-tile {
+    width: 100%;
+    margin: 0px;
+    border-bottom: 1px solid;
 }
 
-.video-video-column-container {
-    background-attachment:fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    overflow:hidden;
-    color: white;
+.video-section .body-container {
+    border-bottom: 2px solid;
+    margin: 0px;
 }
 
-.video-video-column {
-    width: 50%;
-    margin: 100px 0px;
-    text-align: center;
-    display: inline-block;
-    float: left;
+.video-section .body {
+    border-bottom: 10px solid;
 }
 
-.video-video-line-break {
-    width: 90%;
-    margin-left: 5%;
-    float:left;
-    height: 2px;
-    background-color: white;
+.video-section .video-title {
+  margin-top: 25%;
+  text-align: center;
 }
 
-.video-video-column-left {
-    float:left;
+.video-section .video-subtitle {
+    text-align:center;
+
 }
 
-.video-video-column-right {
-    float:right;
-}
-
-.video-video-frame {
-    width: 600px;
-    height: 347px;
-    margin-top: 40px;
-}
-
-.video-video-header {
-    text-align:left;
-    font-size: 40px;
-    margin:auto;
-    width: 600px;
-    transition:all ease 1s;
-}
-
-.video-video-column-container:hover .video-video-header{
-    text-indent: 15px;
-    color: red;
-}
-
-.video-video-description {
-    text-align:left;
-    margin:auto;
-    font-size: 25px;
-    width: 600px;
-}
-
-.video-video-description-left {
-    text-align: left;
-}
-
-.video-video-description-right {
-    text-align: right;
-}
-
-@media(max-width: 1400px) {
-    .video-video-column {
-        width: 100%;
-        text-align:center;
-        margin: 30px 0px;
+@media(max-width: 1000px){
+    .video-section .video-title {
+        padding: 20px 0px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid;
     }
-
-   
-    .video-video-frame {
-        margin: 0px;
-    }
-
-   
 }
-
-@media(max-width: 1000px) {
- .video-video-column-container {
-        background-size: 100%;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-attachment: initial;
-    }
-
-}
-

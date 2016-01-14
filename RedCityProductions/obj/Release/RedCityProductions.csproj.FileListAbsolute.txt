@@ -152,3 +152,6 @@ C:\Users\Renzo\Source\Repos\GianDomProd\RedCityProductions\bin\System.Web.Http.O
 C:\Users\Renzo\Source\Repos\GianDomProd\RedCityProductions\obj\Release\RedCityProductions.csprojResolveAssemblyReference.cache
 C:\Users\Renzo\Source\Repos\GianDomProd\RedCityProductions\obj\Release\RedCityProductions.dll
 C:\Users\Renzo\Source\Repos\GianDomProd\RedCityProductions\obj\Release\RedCityProductions.pdb
+C:\Users\Renzo\Source\Repos\GianDomProd\RedCityProductions\bin\SendGrid.dll
+C:\Users\Renzo\Source\Repos\GianDomProd\RedCityProductions\bin\SendGrid.SmtpApi.dll
+C:\Users\Renzo\Source\Repos\GianDomProd\RedCityProductions\bin\SendGridMail.dll
