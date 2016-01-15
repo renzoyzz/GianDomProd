@@ -15,15 +15,38 @@ namespace RedCityProductions.API
         
 
         // POST: api/Email
-        public void Post(Email emailMessage )
+        public IHttpActionResult Post (Email emailMessage)
         {
+           
+
+
+
             var mailMessage = new SendGridMessage();
             mailMessage.AddTo("filmforest@outlook.com");
-            mailMessage.From = new MailAddress(emailMessage.EmailAddress);
+            try {
+                mailMessage.From = new MailAddress(emailMessage.EmailAddress);
+            } catch  {
+                ModelState.AddModelError("Email", "Invalid Email Address");
+            }
             mailMessage.Subject = "Forest Film Contact";
             mailMessage.Text = emailMessage.Message +"\n\nName: " + emailMessage.FirstName + " " + emailMessage.LastName + "\nEmail: " + emailMessage.EmailAddress + "\nPhone: " + emailMessage.Phone;
             var transportWeb = new Web("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");
-            transportWeb.DeliverAsync(mailMessage).Wait();
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(this.ModelState);
+                }
+                transportWeb.DeliverAsync(mailMessage).Wait();
+                return Ok();
+            }
+            catch {
+                ModelState.AddModelError("Error", "There was an error sending your message, please try again soon");
+                return BadRequest(this.ModelState);
+            }
+           
+
+            
         }
 
       
