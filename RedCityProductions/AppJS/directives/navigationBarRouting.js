@@ -34,7 +34,13 @@ var RedCityApp;
             }
             NavigationBarRouting.prototype.fixNavToTop = function () {
                 var windowScroll = this.window.scrollTop();
-                var navBarScroll = $('.index-nav-container-jumbo').offset().top;
+                var navBarScroll = 0;
+                if (this.currentPage == 1) {
+                    navBarScroll = 0;
+                }
+                else {
+                    navBarScroll = $('.index-nav-container-jumbo').offset().top;
+                }
                 if (windowScroll < navBarScroll) {
                     $('.index-nav-container').css({
                         display: 'none'

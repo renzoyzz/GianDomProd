@@ -13,13 +13,17 @@
     color: white;
     overflow: hidden;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+
     background-attachment: fixed;
 }
 
 .video-section .portfolio-tile {
     width: 100%;
     margin: 0px;
-    border-bottom: 1px solid;
 }
 
 .video-section .body-container {
@@ -34,11 +38,7 @@
     border-bottom: 0px solid;
 }
 
-.video-section .body {
 
-    border-bottom: 10px solid;
-    
-}
 
 .video-section .video-title {
   margin-top: 25%;
@@ -70,6 +70,10 @@
 @media(min-width: 1500px) {
     .video-section .body-container {
         background-size: 1500px;
+        -webkit-background-size: 1500px;
+        -moz-background-size: 1500px;
+        -o-background-size: 1500px;
+
         background-position: center;
         background-repeat: repeat-x;
 

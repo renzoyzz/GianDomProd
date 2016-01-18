@@ -42,7 +42,13 @@
 
         private fixNavToTop() {
             let windowScroll = this.window.scrollTop();
-            let navBarScroll = $('.index-nav-container-jumbo').offset().top;
+            
+            let navBarScroll = 0;
+            if (this.currentPage == 1) {
+                navBarScroll = 0;
+            } else {
+                navBarScroll = $('.index-nav-container-jumbo').offset().top;
+            }
             if (windowScroll < navBarScroll) {
                 $('.index-nav-container').css({
                     display: 'none'

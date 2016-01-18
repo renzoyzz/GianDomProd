@@ -1,11 +1,7 @@
 ﻿@font-face {
     font-family: 'Gotham';
     src: url('/Content/Fonts/gotham-medium1-webfont.eot');
-    src: url('/Content/Fonts/gotham-medium1-webfont.eot?#iefix') format('embedded-opentype'), 
-        url('/Content/Fonts/gotham-medium1-webfont.woff2') format('woff2'), 
-        url('/Content/Fonts/gotham-medium1-webfont.woff') format('woff'), 
-        url('/Content/Fonts/gotham-medium1-webfont.ttf') format('truetype'), 
-        url('/Content/Fonts/gotham-medium1-webfont.svg#gotham_mediumregular') format('svg');
+    src: url('/Content/Fonts/gotham-medium1-webfont.eot?#iefix') format('embedded-opentype'), url('/Content/Fonts/gotham-medium1-webfont.woff2') format('woff2'), url('/Content/Fonts/gotham-medium1-webfont.woff') format('woff'), url('/Content/Fonts/gotham-medium1-webfont.ttf') format('truetype'), url('/Content/Fonts/gotham-medium1-webfont.svg#gotham_mediumregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -13,27 +9,21 @@
 @font-face {
     font-family: 'Gotham_light';
     src: url('/Content/Fonts/gotham-light1-webfont.eot');
-    src: url('/Content/Fonts/gotham-light1-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/Content/Fonts/gotham-light1-webfont.woff2') format('woff2'),
-         url('/Content/Fonts/gotham-light1-webfont.woff') format('woff'),
-         url('/Content/Fonts/gotham-light1-webfont.ttf') format('truetype'),
-         url('/Content/Fonts/gotham-light1-webfont.svg#gotham_lightregular') format('svg');
+    src: url('/Content/Fonts/gotham-light1-webfont.eot?#iefix') format('embedded-opentype'), url('/Content/Fonts/gotham-light1-webfont.woff2') format('woff2'), url('/Content/Fonts/gotham-light1-webfont.woff') format('woff'), url('/Content/Fonts/gotham-light1-webfont.ttf') format('truetype'), url('/Content/Fonts/gotham-light1-webfont.svg#gotham_lightregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 .overlay-mask {
-
-  background-color: rgba(0,0,0,.35);
-
+    background-color: rgba(0,0,0,.5);
 }
 
-.about-section .overlay-mask{
+.about-section .overlay-mask {
     position: absolute;
+    background-color: rgba(0,0,0,.35);
+
     width: 100%;
     height: 100%;
-
 }
 
 .page-container {
@@ -58,7 +48,7 @@ body {
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-backgroundsize: cover;
+    -o-background-size: cover;
     position: relative;
     min-height: 700px;
 }
@@ -141,22 +131,20 @@ body {
 }
 
     .about-section .body-container {
+        font-family: Gotham_light;
         position: absolute;
         bottom: 0px;
-        font-family: Gotham_light;
     }
 
 .latest-work-section {
     background-color: rgb(240,240,240);
-
     color: initial;
     overflow: hidden;
 }
 
 .client-section {
     overflow: hidden;
-        background-color: rgb(240,240,240);
-
+    background-color: rgb(240,240,240);
 }
 
     .client-section .client-logo {
@@ -188,7 +176,6 @@ body {
     -o-backgroundsize: cover;
     color: white;
     overflow: hidden;
-
 }
 
     .break-section .body {
@@ -230,6 +217,7 @@ body {
 }
 
 .title-section {
+    font-family: Gotham_light;
     padding: 0px 50px;
     font-size: 40px;
     display: inline-block;
@@ -245,6 +233,8 @@ body {
 }
 
 .title-section-right {
+    font-family: Gotham_light;
+
     padding: 0px 50px;
     font-size: 40px;
     display: inline-block;
@@ -376,7 +366,7 @@ body {
         display: none;
     }
 
-  
+
 
     .break-section .button-container {
         font-size: 30px;
@@ -476,5 +466,3 @@ body {
         float: left;
     }
 }
-
-
