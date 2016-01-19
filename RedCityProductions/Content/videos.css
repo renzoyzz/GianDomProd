@@ -32,6 +32,10 @@
     margin: 0px;
 }
 
+.video-section .column2 {
+    text-align: right;
+}
+
 .video-second-section .body-container {
 
 
@@ -41,6 +45,8 @@
 
 
 .video-section .video-title {
+    width: 400px;
+    display: inline-block;
   margin-top: 25%;
   text-align: center;
 
@@ -48,6 +54,7 @@
 
 .video-section .video-subtitle {
         font-family: Gotham_light;
+    border-top: 1px solid;
 
     font-size: 15px;
     text-align:center;
@@ -61,9 +68,15 @@
 
     .video-section .video-title {
         padding: 20px 0px;
+        display: block;
+        width: 100%;
         margin-top: 0px;
         margin-bottom: 20px;
         border-bottom: 2px solid;
+    }
+
+    .video-section .video-subtitle {
+        border: none;
     }
 }
 

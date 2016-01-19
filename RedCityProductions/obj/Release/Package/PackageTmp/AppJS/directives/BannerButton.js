@@ -4,8 +4,14 @@ var RedCityApp;
     (function (Directives) {
         var PortfolioTile = (function () {
             function PortfolioTile(scope) {
+                var _this = this;
                 this.scope = scope;
                 this.modalElement = this.scope.modalContainer;
+                console.log(this.scope.closerButton);
+                this.closeButton = this.scope.closerButton;
+                this.closeButton.click(function () {
+                    _this.hideModal();
+                });
                 this.hideModal();
             }
             PortfolioTile.prototype.hideModal = function () {
@@ -13,7 +19,13 @@ var RedCityApp;
                 this.modalElement.css({
                     opacity: '0'
                 });
+                this.closeButton.css({
+                    opacity: '0'
+                });
                 setTimeout(function () {
+                    _this.closeButton.css({
+                        display: 'none',
+                    });
                     _this.modalElement.css({
                         display: 'none'
                     });
@@ -23,6 +35,10 @@ var RedCityApp;
             PortfolioTile.prototype.showModal = function () {
                 this.modalElement.html('<iframe class="portfolio-tile-modal" src="' + this.scope.videoLink + '"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
                 this.modalElement.css({
+                    display: 'block',
+                    opacity: '1'
+                });
+                this.closeButton.css({
                     display: 'block',
                     opacity: '1'
                 });
