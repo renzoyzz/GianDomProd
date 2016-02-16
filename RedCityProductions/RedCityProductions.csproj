@@ -264,6 +264,8 @@
     <Content Include="Content\Images\140651_1.jpg" />
     <Content Include="Content\Images\6810112-snowflakes-falling-background.jpg" />
     <Content Include="Content\Images\6914545-autumn-red-forest.jpg" />
+    <Content Include="Content\Images\Logos\Final_version1_no_text.png" />
+    <Content Include="Content\Images\Logos\Final_version1_text.png" />
     <Content Include="Content\Images\SplashArt\About_Splash.jpg" />
     <Content Include="Content\Images\cold-snow-nature-winter2.jpg" />
     <Content Include="Content\Images\ff_home_overlay1.png" />
@@ -293,8 +295,8 @@
     <Content Include="Content\Images\DunlopTennis.jpg" />
     <Content Include="Content\Images\Logo.png" />
     <Content Include="Content\Images\makeUp.png" />
-    <Content Include="Content\Images\summer_forest_wp_by_vally5-d614t9s.jpg" />
-    <Content Include="Content\Images\Tree-Closeup.jpg" />
+    <Content Include="Content\Images\SplashArt\summer_forest_wp_by_vally5-d614t9s.jpg" />
+    <Content Include="Content\Images\SplashArt\Tree-Closeup.jpg" />
     <Content Include="Content\Images\Video overlay2.png" />
     <Content Include="Content\Images\Video overlay3.png" />
     <Content Include="Content\Images\Video overlay4.png" />
@@ -388,6 +390,7 @@
     <Content Include="Content\Fonts\gotham-light1-webfont.ttf" />
     <Content Include="Content\Fonts\gotham-light1-webfont.woff" />
     <Content Include="Content\Fonts\gotham-light1-webfont.woff2" />
+    <None Include="Properties\PublishProfiles\FilmForest.pubxml" />
     <None Include="Properties\PublishProfiles\GianDomProductions.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\GoogleMaps\googleMaps.js" />
@@ -1165,7 +1168,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Images\TileImages\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

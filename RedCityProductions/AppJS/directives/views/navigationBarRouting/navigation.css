@@ -7,7 +7,6 @@
     text-align: center;
     background-color: rgba(14, 45, 18, 1);
     border-bottom: 2px solid white;
-
     transition: all ease .5s;
 }
 
@@ -26,7 +25,6 @@
     bottom: 0px;
     transition: all ease .5s;
     border-bottom: 2px solid white;
-    
 }
 
 
@@ -37,19 +35,19 @@
     margin: auto;
     text-align: center;
     transition: all ease .5s;
-
 }
 
 .index-nav-logo {
-    color: white;
-    display: inline-block;
     position: relative;
-    top : 20px;
-    font-size: 15px;
+    top: 5px;
+    color: white;
+    background-image: url(/Content/Images/Logos/Final_version1_no_text.png);
     background-size: cover;
+    height: 50px;
+    width: 115px;
+    display: inline-block;
     float: left;
     transition: all ease .5s;
-
 }
 
 .index-navigation-bar-container {
@@ -61,7 +59,7 @@
 }
 
 .index-navigation-choice {
-    color: white;   
+    color: white;
     cursor: pointer;
     padding: 5px 0px;
     width: 100px;
@@ -115,53 +113,47 @@
 
 
 
-@media(max-width: 1000px){
-    
+@media(max-width: 1000px) {
+
     .index-navigation-container {
-    height: 60px;
-    border-bottom: 0px solid white;
-}
+        height: 60px;
+        border-bottom: 0px solid white;
+    }
 
-.index-nav-container {
+    .index-nav-container {
+        height: 100px;
+    }
 
-    height: 100px;
-
-}
-
-.index-nav-container-jumbo {
-
-    height: 100px;
-
-}
+    .index-nav-container-jumbo {
+        height: 100px;
+    }
 
 
-.index-nav-container-logo-container {
-    display: block;
-    height: 68px;
-    width: 75%;
-    margin: auto;
-    text-align: center;
-}
+    .index-nav-container-logo-container {
+        display: block;
+        height: 68px;
+        width: 75%;
+        margin: auto;
+        text-align: center;
+    }
 
 
     .index-navigation-bar-container {
-    display: none;
-}
+        display: none;
+    }
 
     .index-nav-logo {
         font-size: 20px;
-        top: 35px;
-    float: left;
-
-}
+        top: 13px;
+        float: left;
+    }
 
     .index-navigation-choice-mobile {
-   display: inline-block;
-}
+        display: inline-block;
+    }
 
 
     .index-nav-mobile-choice-container {
-    display: block;
-}
-
+        display: block;
+    }
 }

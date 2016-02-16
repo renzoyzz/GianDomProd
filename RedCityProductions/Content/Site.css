@@ -21,7 +21,6 @@
 .about-section .overlay-mask {
     position: absolute;
     background-color: rgba(0,0,0,.35);
-
     width: 100%;
     height: 100%;
 }
@@ -30,8 +29,18 @@
     padding-top: 70px;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 
 body {
+    background-image: url(/Content/Images/audi_cover1.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-backgroundsize: cover;
+    background-attachment: fixed;
     font-family: Gotham;
     overflow-x: hidden;
     min-width: 500px;
@@ -184,6 +193,8 @@ body {
     }
 
     .break-section .button-container {
+        color: white;
+
         font-size: 30px;
         border: 1px solid white;
         cursor: pointer;
@@ -194,6 +205,9 @@ body {
         text-align: center;
         transition: all ease .2s;
     }
+
+
+    
 
 
 .body-container {
@@ -232,7 +246,6 @@ body {
 
 .title-section-right {
     font-family: Gotham_light;
-
     padding: 0px 50px;
     font-size: 40px;
     display: inline-block;
@@ -294,6 +307,7 @@ body {
     text-align: left;
     padding: 0px 30px;
     font-size: 18px;
+    
     width: 50%;
     display: inline-block;
     float: left;
@@ -366,7 +380,8 @@ body {
 
 
 
-    .break-section .button-container {
+    .break-section  .button-container {
+
         font-size: 30px;
         cursor: pointer;
         position: relative;
